@@ -8,5 +8,5 @@ tests:
       name: HassTurnOn
       slots:
         domain: script
-        name: "Chế Độ Ẩn"
+        name: "chế độ ẩn"
     response: "Đã bắt đầu"

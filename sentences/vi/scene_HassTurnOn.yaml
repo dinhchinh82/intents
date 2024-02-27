@@ -16,10 +16,10 @@ intents:
           - "[kích hoạt] <area> <name> [cảnh]"
           - "<area> <name> bật"
           - "<turn> (<area> <name> [cảnh];bật)"
-          - "[kích hoạt] <name> [cảnh] <trong> <area>"
-          - "<turn> (<name> [cảnh] <trong> <area>;bật)"
+          - "[kích hoạt] <name> [cảnh] trong <area>"
+          - "<turn> (<name> [cảnh] trong <area>;bật)"
           - "(chuyển đổi|chuyển) ([sang] <area> <name>|<area> sang <name>) [cảnh]"
-          - "(chuyển đổi|chuyển) sang <name> [cảnh] <trong> <area>"
+          - "(chuyển đổi|chuyển) sang <name> [cảnh] trong <area>"
         requires_context:
           domain: scene
         slots:

@@ -2,20 +2,20 @@ language: vi
 tests:
   - sentences:
       - "tắt đèn phòng ngủ"
-      - "tắt đèn trong phòng ngủ"
+      - "tắt cái đèn phòng ngủ"
+      - "tắt đèn phòng ngủ đi"
+      - "tắt cái đèn phòng ngủ đi"
       - "đèn phòng ngủ tắt"
-      - "đèn trong phòng ngủ tắt"
-      - "đèn phòng ngủ tắt"
-      - "hủy kích hoạt đèn phòng ngủ"
+      - "vô hiệu hóa đèn phòng ngủ"
     intent:
       name: HassTurnOff
       slots:
-        name: Đèn Phòng ngủ
+        name: đèn phòng ngủ
     response: "Đã tắt đèn"
 
   - sentences:
-      - "tắt đèn góc chơi"
-      - "đèn góc chơi tắt"
+      - tắt đèn góc chơi
+      - đèn góc chơi tắt
     intent:
       name: HassTurnOff
       slots:

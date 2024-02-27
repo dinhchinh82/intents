@@ -74,19 +74,19 @@ intents:
       # Màu sắc
       - sentences:
           - "[<set>] <name> [màu] [đến] {color}"
-          - "[<set>] [[màu sắc của] <name> đến {color}"
+          - "[<set>] [màu sắc của] <name> đến {color}"
         requires_context:
           domain: light
         response: color
       - sentences:
-          - "[<set>] [[màu của] (<area> | [tất cả [các]] đèn trong <area> | [tất cả] đèn <area>) [đến] {color}"
+          - "[<set>] [màu của] (<area> | [tất cả [các]] đèn trong <area> | [tất cả] đèn <area>) [đến] {color}"
           - "[<set>] (<area> | [tất cả] đèn trong <area> | [tất cả] đèn <area>) [màu] [đến] {color}"
         slots:
           name: "tất cả"
         response: brightness
 
       - sentences:
-          - "[<set>] [[màu của] [tất cả] <light> [đến] {color}"
+          - "[<set>] [màu của] [tất cả] <light> [đến] {color}"
           - "[<set>] [màu của] [tất cả] <light> ([ở đây];[đến] {color})"
         expansion_rules:
           in_here: "[ ở] đây"
