@@ -199,8 +199,7 @@ tests:
         device_class: cold
         state: "on"
     response: "Không có"
-language: vi
-tests:
+
   - sentences:
       - "có bao nhiêu vật đang lạnh?"
     intent:

@@ -526,7 +526,7 @@ intents:
       # Ổ cắm
       - sentences:
           - "(có|đang) <name> {bs_plug_states:state} [trong <area>]"
-        response: "một câu hỏi có hoặc không"
+        response: one_yesno
         requires_context:
           domain: binary_sensor
           device_class: plug
@@ -536,28 +536,28 @@ intents:
 
       - sentences:
           - "(có|đang) bất kỳ (thứ|thiết bị) nào {bs_plug_states:state} [trong <area>]"
-        response: "bất kỳ"
+        response: any
         slots:
           domain: binary_sensor
           device_class: plug
 
       - sentences:
           - "tất cả [các] (thứ|thiết bị) {bs_plug_states:state} [trong <area>]"
-        response: "tất cả"
+        response: all
         slots:
           domain: binary_sensor
           device_class: plug
 
       - sentences:
           - "(nào|cái nào) (thứ|thiết bị) (có|đang) {bs_plug_states:state} [trong <area>]"
-        response: "cái nào"
+        response: which
         slots:
           domain: binary_sensor
           device_class: plug
 
       - sentences:
           - "có bao nhiêu (thứ|thiết bị) (có|đang) {bs_plug_states:state} [trong <area>]"
-        response: "bao nhiêu"
+        response: how_many
         slots:
           domain: binary_sensor
           device_class: plug
@@ -565,7 +565,7 @@ intents:
       # Điện
       - sentences:
           - "(có|đang) <name> {bs_power_states:state} [trong <area>]"
-        response: "một câu hỏi có hoặc không"
+        response: one_yesno
         requires_context:
           domain: binary_sensor
           device_class: power
@@ -575,28 +575,28 @@ intents:
 
       - sentences:
           - "(có|đang) bất kỳ (thứ|thiết bị) nào {bs_power_states:state} [trong <area>]"
-        response: "bất kỳ"
+        response: any
         slots:
           domain: binary_sensor
           device_class: power
 
       - sentences:
           - "tất cả [các] (thứ|thiết bị) {bs_power_states:state} [trong <area>]"
-        response: "tất cả"
+        response: all
         slots:
           domain: binary_sensor
           device_class: power
 
       - sentences:
           - "(nào|cái nào) (thứ|thiết bị) (có|đang) {bs_power_states:state} [trong <area>]"
-        response: "cái nào"
+        response: which
         slots:
           domain: binary_sensor
           device_class: power
 
       - sentences:
           - "có bao nhiêu (thứ|thiết bị) (có|đang) {bs_power_states:state} [trong <area>]"
-        response: "bao nhiêu"
+        response: how_many
         slots:
           domain: binary_sensor
           device_class: power
@@ -604,7 +604,7 @@ intents:
       # Mặt tiền
       - sentences:
           - "(có|đang) <name> {bs_presence_states:state} [trong <area>]"
-        response: "một câu hỏi có hoặc không"
+        response: one_yesno
         requires_context:
           domain: binary_sensor
           device_class: presence
@@ -614,28 +614,28 @@ intents:
 
       - sentences:
           - "(có|đang) bất kỳ (thứ|thiết bị) nào {bs_presence_states:state} [trong <area>]"
-        response: "bất kỳ"
+        response: any
         slots:
           domain: binary_sensor
           device_class: presence
 
       - sentences:
           - "tất cả [các] (thứ|thiết bị) {bs_presence_states:state} [trong <area>]"
-        response: "tất cả"
+        response: all
         slots:
           domain: binary_sensor
           device_class: presence
 
       - sentences:
           - "(nào|cái nào) (thứ|thiết bị) (có|đang) {bs_presence_states:state} [trong <area>]"
-        response: "cái nào"
+        response: which
         slots:
           domain: binary_sensor
           device_class: presence
 
       - sentences:
           - "có bao nhiêu (thứ|thiết bị) (có|đang) {bs_presence_states:state} [trong <area>]"
-        response: "bao nhiêu"
+        response: how_many
         slots:
           domain: binary_sensor
           device_class: presence
@@ -643,7 +643,7 @@ intents:
        # Vấn đề
       - sentences:
           - "có [bất kỳ] vấn đề nào với <name> [tại <area>] không"
-        response: "một câu hỏi có hoặc không"
+        response: one_yesno
         requires_context:
           domain: binary_sensor
           device_class: problem
@@ -655,7 +655,7 @@ intents:
       # Hoạt động
       - sentences:
           - "<name> (có|đang) {bs_running_states:state} [tại <area>] không"
-        response: "một câu hỏi có hoặc không"
+        response: one_yesno
         requires_context:
           domain: binary_sensor
           device_class: running
@@ -665,28 +665,28 @@ intents:
 
       - sentences:
           - "(có|đang) bất kỳ (thứ|thiết bị) nào {bs_running_states:state} [tại <area>] không"
-        response: "bất kỳ"
+        response: any
         slots:
           domain: binary_sensor
           device_class: running
 
       - sentences:
           - "tất cả [các] (thứ|thiết bị) (có|đang) {bs_running_states:state} [tại <area>] không"
-        response: "tất cả"
+        response: all
         slots:
           domain: binary_sensor
           device_class: running
 
       - sentences:
           - "(nào|cái nào) (thứ|thiết bị) (có|đang) {bs_running_states:state} [tại <area>] không"
-        response: "cái nào"
+        response: which
         slots:
           domain: binary_sensor
           device_class: running
 
       - sentences:
           - "có bao nhiêu (thứ|thiết bị) (có|đang) {bs_running_states:state} [tại <area>] không"
-        response: "bao nhiêu"
+        response: how_many
         slots:
           domain: binary_sensor
           device_class: running
@@ -694,7 +694,7 @@ intents:
       # An toàn
       - sentences:
           - "<name> (có|đang) {bs_safety_states:state} [tại <area>] không"
-        response: "một câu hỏi có hoặc không"
+        response: one_yesno
         requires_context:
           domain: binary_sensor
           device_class: safety
@@ -705,7 +705,7 @@ intents:
       # Khói
       - sentences:
           - "<name> (có|đang) {bs_smoke_states:state} [tại <area>] không"
-        response: "một câu hỏi có hoặc không"
+        response: one_yesno
         requires_context:
           domain: binary_sensor
           device_class: smoke
@@ -715,14 +715,14 @@ intents:
 
       - sentences:
           - "(có|đang) bất kỳ cảm biến khói nào {bs_smoke_states:state} [tại <area>] không"
-        response: "bất kỳ"
+        response: any
         slots:
           domain: binary_sensor
           device_class: smoke
 
       - sentences:
           - "tại [có] [bất kỳ] khói nào trong <area> không"
-        response: "bất kỳ"
+        response: any
         slots:
           domain: binary_sensor
           device_class: smoke
@@ -730,21 +730,21 @@ intents:
 
       - sentences:
           - "tất cả [các] cảm biến khói (có|đang) {bs_smoke_states:state} [tại <area>] không"
-        response: "tất cả"
+        response: all
         slots:
           domain: binary_sensor
           device_class: smoke
 
       - sentences:
           - "(nào|cái nào) cảm biến khói (có|đang) {bs_smoke_states:state} [tại <area>] không"
-        response: "cái nào"
+        response: which
         slots:
           domain: binary_sensor
           device_class: smoke
 
       - sentences:
           - "có bao nhiêu cảm biến khói (có|đang) {bs_smoke_states:state} [tại <area>] không"
-        response: "bao nhiêu"
+        response: how_many
         slots:
           domain: binary_sensor
           device_class: smoke
@@ -752,7 +752,7 @@ intents:
        # Âm thanh
       - sentences:
           - "<name> (có|đang) {bs_sound_states:state} [tại <area>] không"
-        response: "một câu hỏi có hoặc không"
+        response: one_yesno
         requires_context:
           domain: binary_sensor
           device_class: sound
@@ -762,14 +762,14 @@ intents:
 
       - sentences:
           - "(có|đang) bất kỳ cảm biến (tiếng ồn|âm thanh) nào {bs_sound_states:state} [tại <area>] không"
-        response: "bất kỳ"
+        response: any
         slots:
           domain: binary_sensor
           device_class: sound
 
       - sentences:
           - "tại [có] [bất kỳ] tiếng ồn nào trong <area> không"
-        response: "bất kỳ"
+        response: any
         slots:
           domain: binary_sensor
           device_class: sound
@@ -777,21 +777,21 @@ intents:
 
       - sentences:
           - "tất cả [các] cảm biến (tiếng ồn|âm thanh) (có|đang) {bs_sound_states:state} [tại <area>] không"
-        response: "tất cả"
+        response: all
         slots:
           domain: binary_sensor
           device_class: sound
 
       - sentences:
           - "(nào|cái nào) cảm biến (tiếng ồn|âm thanh) (có|đang) {bs_sound_states:state} [tại <area>] không"
-        response: "cái nào"
+        response: which
         slots:
           domain: binary_sensor
           device_class: sound
 
       - sentences:
           - "có bao nhiêu cảm biến (tiếng ồn|âm thanh) (có|đang) {bs_sound_states:state} [tại <area>] không"
-        response: "bao nhiêu"
+        response: how_many
         slots:
           domain: binary_sensor
           device_class: sound
@@ -799,7 +799,7 @@ intents:
       # Phá hoại
       - sentences:
           - "<name> (có|đang) {bs_tamper_states:state} [tại <area>] không"
-        response: "một câu hỏi có hoặc không"
+        response: one_yesno
         requires_context:
           domain: binary_sensor
           device_class: tamper
@@ -810,7 +810,7 @@ intents:
       # Cập nhật
       - sentences:
           - "<name> (có|đang) {bs_update_states:state} [tại <area>] không"
-        response: "một câu hỏi có hoặc không"
+        response: one_yesno
         requires_context:
           domain: binary_sensor
           device_class: update
@@ -820,7 +820,7 @@ intents:
 
       - sentences:
           - "có [bất kỳ] cập nhật [(firmware|phần mềm)] nào [được] [có sẵn] [trong <area>] không"
-        response: "bất kỳ"
+        response: any
         slots:
           domain: binary_sensor
           device_class: update
@@ -828,7 +828,7 @@ intents:
 
       - sentences:
           - "(nào|cái nào) cập nhật [(firmware|phần mềm)] (có|đang) [có sẵn] [tại <area>] không"
-        response: "cái nào"
+        response: which 
         slots:
           domain: binary_sensor
           device_class: update
@@ -836,7 +836,7 @@ intents:
 
       - sentences:
           - "có bao nhiêu cập nhật [(firmware|phần mềm)] (có|đang) [có sẵn] [tại <area>] không"
-        response: "bao nhiêu"
+        response: how_many
         slots:
           domain: binary_sensor
           device_class: update
@@ -845,7 +845,7 @@ intents:
       # Rung động
       - sentences:
           - "<name> (có|đang) {bs_vibration_states:state} [tại <area>] không"
-        response: "một câu hỏi có hoặc không"
+        response: one_yesno
         requires_context:
           domain: binary_sensor
           device_class: vibration
@@ -855,7 +855,7 @@ intents:
 
       - sentences:
           - "có cái gì đang rung [tại <area>] không"
-        response: "bất kỳ"
+        response: any
         requires_context:
           domain: binary_sensor
           device_class: vibration
@@ -867,7 +867,7 @@ intents:
       # Cửa sổ
       - sentences:
           - "<name> (có|đang) {bs_window_states:state} [tại <area>] không"
-        response: "một câu hỏi có hoặc không"
+        response: one_yesno
         requires_context:
           domain: binary_sensor
           device_class: window
