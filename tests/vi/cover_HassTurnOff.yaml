@@ -7,7 +7,7 @@ tests:
       slots:
         domain: cover
         device_class: garage
-    response: "Đã đóng cửa garage"
+    response: "Đã đóng garage"
 
   - sentences:
       - "đóng cửa sổ trong bếp"

@@ -2,27 +2,11 @@ language: vi
 tests:
   - sentences:
       - "bật tất cả đèn trong phòng khách"
-      - "bật tất cả đèn trong phòng khách"
-      - "bật đèn trong phòng khách"
-      - "bật đèn trong phòng khách"
-      - "bật đèn trong phòng khách"
       - "bật đèn trong phòng khách"
       - "bật tất cả đèn phòng khách"
-      - "bật đèn phòng khách"
-      - "bật đèn phòng khách"
-      - "bật đèn phòng khách"
-      - "bật tất cả đèn phòng khách"
-      - "bật tất cả đèn trong phòng khách"
-      - "bật tất cả đèn trong phòng khách"
-      - "bật đèn trong phòng khách"
-      - "bật đèn trong phòng khách"
-      - "bật đèn trong phòng khách"
-      - "bật đèn trong phòng khách"
       - "bật đèn phòng khách"
       - "đèn phòng khách bật"
       - "kích hoạt đèn phòng khách"
-      - "đèn phòng khách bật"
-      - "đèn phòng khách bật"
     intent:
       name: HassTurnOn
       slots:
@@ -32,8 +16,6 @@ tests:
 
   - sentences:
       - "bật đèn"
-      - "bật đèn ở đây"
-      - "bật đèn ở đây"
       - "bật đèn ở đây"
     intent:
       name: HassTurnOn

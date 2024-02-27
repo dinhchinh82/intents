@@ -7,7 +7,7 @@ tests:
       context:
         domain: lock
       slots:
-        name: Cửa Chính
+        name: cửa chính
     response: "Đã khóa"
 
   - sentences:
