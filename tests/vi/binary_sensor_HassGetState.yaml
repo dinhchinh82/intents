@@ -314,7 +314,7 @@ tests:
     intent:
       name: HassGetState
       slots:
-        area: "Kitchen"
+        area: "bếp"
         domain: binary_sensor
         device_class: gas
         state: "on"
@@ -488,7 +488,7 @@ tests:
         domain: binary_sensor
         device_class: moisture
         state: "on"
-        area: "Kitchen"
+        area: "bếp"
     response: "Không"
 
   - sentences:
@@ -582,7 +582,7 @@ tests:
     intent:
       name: HassGetState
       slots:
-        area: "Kitchen"
+        area: "bếp"
         domain: "binary_sensor"
         device_class: "occupancy"
         name: "Occupancy"
@@ -608,7 +608,7 @@ tests:
         domain: binary_sensor
         device_class: occupancy
         state: "on"
-        area: "Kitchen"
+        area: "bếp"
     response: "Có, Phát hiện người"
 
   - sentences:
@@ -951,7 +951,7 @@ tests:
     intent:
       name: HassGetState
       slots:
-        area: "Kitchen"
+        area: "bếp"
         domain: "binary_sensor"
         device_class: "smoke"
         state: "on"
@@ -1060,7 +1060,7 @@ tests:
         device_class: "tamper"
         name: "Cookie Stash"
         state: "off"
-    response: "Có"    
+    response: "Có"
 
   # Cập nhật
   - sentences:
@@ -1139,4 +1139,4 @@ tests:
         device_class: "window"
         name: "Shed Window"
         state: "on"
-    response: "Có"  
+    response: "Có"

@@ -78,11 +78,11 @@ lists:
         out: "off"
   on_off_domains:
     values:
-      - in: đèn[s]
+      - in: đèn
         out: light
-      - in: quạt[s]
+      - in: quạt
         out: fan
-      - in: công tắc[es]
+      - in: công tắc
         out: switch
   cover_states:
     values:
@@ -96,23 +96,23 @@ lists:
         out: "closing"
   cover_classes:
     values:
-      - in: mái che[s]
+      - in: mái che
         out: awning
-      - in: rèm cửa[s]
+      - in: rèm cửa
         out: blind
-      - in: màn cửa[s]
+      - in: màn cửa
         out: curtain
-      - in: cửa[s]
+      - in: cửa
         out: door
-      - in: cửa garage[s]
+      - in: cửa garage
         out: garage
-      - in: cổng[s]
+      - in: cổng
         out: gate
-      - in: bức bình phong[s]
+      - in: rèm
         out: shade
-      - in: cửa chớp[s]
+      - in: cửa chớp
         out: shutter
-      - in: cửa sổ[s]
+      - in: cửa sổ
         out: window
   lock_states:
     values:
@@ -339,7 +339,9 @@ expansion_rules:
   turn: "(bật|chuyển|đổi)"
   temp: "(nhiệt|nhiệt độ)"
   temperature: "{temperature}[ ][°|độ][ ][{temperature_unit}]"
+  mở: "(mở|nâng lên)"
   open: "(mở|nâng lên)"
+  đóng: "(đóng|đậy lại|hạ xuống)"
   close: "(đóng|đậy lại|hạ xuống)"
   set: "(đặt|tạo|thay đổi|bật)"
   numeric_value_set: "(đặt|thay đổi|bật|tăng|giảm|tạo)"

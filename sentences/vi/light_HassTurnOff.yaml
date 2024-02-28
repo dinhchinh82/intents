@@ -9,7 +9,7 @@ intents:
         expansion_rules:
           light_devices: "(bóng đèn|công tắc [đèn])"
         requires_context:
-          domain: "đèn"
+          domain: light
       - sentences:
           - "<turn> tắt [tất cả] <light> ở <area>"
           - "<turn> tắt [tất cả] <area> <light>"
@@ -18,7 +18,7 @@ intents:
           - "vô hiệu hóa [tất cả] <light> [trong] <area>"
           - "vô hiệu hóa [tất cả] <area> <light>"
         slots:
-          domain: "đèn"
+          domain: light
         response: "lights_area"
 
       - sentences:
@@ -26,7 +26,7 @@ intents:
           - "vô hiệu hóa (tất cả <light>|<light> khắp nơi)"
         response: "light_all"
         slots:
-          domain: "đèn"
+          domain: light
           name: "tất cả"
 
       # Tắt đèn trong cùng khu vực của thiết bị vệ tinh
@@ -38,7 +38,7 @@ intents:
         expansion_rules:
           tại_đây: "[ tại đây]"
         slots:
-          domain: "đèn"
+          domain: light
         requires_context:
           area:
             slot: true
