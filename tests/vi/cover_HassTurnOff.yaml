@@ -46,7 +46,7 @@ tests:
       name: HassTurnOff
       slots:
         name: rèm trái
-        area: Phòng Khách
+        area: phòng khách
       context:
         domain: cover
         device_class: curtain
@@ -68,9 +68,9 @@ tests:
     intent:
       name: HassTurnOff
       context:
-        area: Phòng Khách
+        area: phòng khách
       slots:
         domain: cover
-        area: Phòng Khách
+        area: phòng khách
         device_class: curtain
     response: "Đã đóng rèm"

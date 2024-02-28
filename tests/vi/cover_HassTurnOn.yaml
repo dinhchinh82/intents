@@ -45,8 +45,8 @@ tests:
     intent:
       name: HassTurnOn
       slots:
-        name: Bình phong rái
-        area: Phòng Khách
+        name: rèm trái
+        area: phòng khách
       context:
         domain: cover
         device_class: curtain
@@ -69,9 +69,9 @@ tests:
     intent:
       name: HassTurnOn
       context:
-        area: Phòng Khách
+        area: phòng khách
       slots:
         domain: cover
-        area: Phòng Khách
+        area: phòng khách
         device_class: curtain
     response: "Đã mở rèm"

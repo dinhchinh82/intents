@@ -15,7 +15,7 @@ areas:
   - name: "lối vào"
     id: "entrance"
 
-  - name: "Văn phòng"
+  - name: "văn phòng"
     id: "office"
 entities:
   - name: "Đèn phòng ngủ"
@@ -43,7 +43,7 @@ entities:
     area: "kitchen"
     state: "on"
 
-  - name: "Tủ bếp"
+  - name: "tủ bếp"
     id: "light.kitchen_cabinets"
     area: "kitchen"
     state: "on"
@@ -53,14 +53,14 @@ entities:
     area: "living_room"
     state: "off"
 
-  - name: "Rèm cửa bên trái"
+  - name: "rèm trái"
     id: "cover.curtain_left"
     area: "living_room"
     state: "open"
     attributes:
       device_class: curtain
 
-  - name: "Rèm cửa bên phải"
+  - name: "rèm phải"
     id: "cover.curtain_right"
     area: "living_room"
     state: "closed"
@@ -111,16 +111,16 @@ entities:
     attributes:
       current_temperature: 1
 
-  - name: "Cửa trước"
+  - name: "cửa trước"
     id: "lock.front_door"
     area: "entrance"
     state: "locked"
 
-  - name: "Cửa sau"
+  - name: "cửa sau"
     id: "lock.back_door"
     state: "unlocked"
 
-  - name: "Cửa bên"
+  - name: "cửa bên"
     id: "lock.side_door"
     state: "locked"
 

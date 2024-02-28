@@ -11,7 +11,7 @@ tests:
     intent:
       name: HassTurnOff
       slots:
-        area: Phòng Khách
+        area: phòng khách
         domain: fan
         name: tất cả
     response: "Đã tắt quạt"
@@ -36,8 +36,8 @@ tests:
     intent:
       name: HassTurnOff
       context:
-        area: Phòng Khách
+        area: phòng khách
       slots:
         domain: fan
-        area: Phòng Khách
+        area: phòng khách
     response: "Đã tắt quạt"

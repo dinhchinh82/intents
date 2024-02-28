@@ -18,7 +18,7 @@ intents:
           domain: lock
 
       - sentences:
-          - "tất cả [các] cửa {lock_states:state} chưa?"
+          - "tất cả cửa {lock_states:state} chưa?"
         response: all
         slots:
           domain: lock

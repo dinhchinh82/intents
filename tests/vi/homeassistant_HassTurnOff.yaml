@@ -19,5 +19,5 @@ tests:
     intent:
       name: HassTurnOff
       slots:
-        name: Góc Chơi
+        name: góc chơi
     response: "Đã tắt đèn"

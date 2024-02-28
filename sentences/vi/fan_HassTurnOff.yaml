@@ -3,10 +3,10 @@ intents:
   HassTurnOff:
     data:
       - sentences:
-          - "<turn> tắt [tất cả] [cái] quạt [ở] <area>"
-          - "<turn> tắt quạt [tại] <area>"
-          - "[<turn>] tắt [tất cả] quạt [ở] <area>"
-          - "[<turn>] tắt [tất cả] [cái] quạt [ở] <area>"
+          - "<turn_off>[tất cả] [cái] quạt [ở] [trong] <area>"
+          - "<turn_off> tắt quạt [tại] <area>"
+          - "[<turn_off>] [tất cả] quạt [ở] <area>"
+          - "[<turn_off>] tắt [tất cả] [cái] quạt [ở] <area>"
           - "dừng [tất cả] [cái] quạt [tại] <area>"
           - "dừng [tất cả] quạt [tại] <area>"
         slots:

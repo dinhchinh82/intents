@@ -1,13 +1,13 @@
 language: vi
 tests:
   - sentences:
-      - "khóa cửa chính"
+      - "khóa cửa trước"
     intent:
       name: HassTurnOn
       context:
         domain: lock
       slots:
-        name: cửa chính
+        name: cửa trước
     response: "Đã khóa"
 
   - sentences:
@@ -19,7 +19,7 @@ tests:
     intent:
       name: HassTurnOn
       slots:
-        area: Nhà bếp
+        area: bếp
         domain: lock
         name: all
     response: "Đã khóa"

@@ -16,7 +16,7 @@ tests:
       name: HassGetState
       slots:
         domain: cover
-        area: "Phòng Khách"
+        area: "phòng khách"
         device_class: curtain
         state: "open"
     response: "Có, rèm trái"
@@ -27,7 +27,7 @@ tests:
       name: HassGetState
       slots:
         domain: cover
-        area: "Phòng Khách"
+        area: "phòng khách"
         device_class: curtain
         state: "open"
     response: "Không, Bình phong Phải chưa mở"

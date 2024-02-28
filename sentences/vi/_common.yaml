@@ -100,7 +100,7 @@ lists:
         out: awning
       - in: rèm cửa
         out: blind
-      - in: màn cửa
+      - in: rèm
         out: curtain
       - in: cửa
         out: door
@@ -108,7 +108,7 @@ lists:
         out: garage
       - in: cổng
         out: gate
-      - in: rèm
+      - in: rèm cuốn
         out: shade
       - in: cửa chớp
         out: shutter
@@ -338,7 +338,7 @@ expansion_rules:
   light: "[cái] (đèn|ánh sáng)"
   turn: "(kích hoạt|bật|chuyển|đổi)"
   temp: "(nhiệt|nhiệt độ)"
-  temperature: "{temperature}[ ][°|độ][ ][{temperature_unit}]"
+  temperature: "{temperature}[°|độ][ ][{temperature_unit}]"
   mở: "(mở|nâng lên)"
   open: "(mở|nâng lên)"
   đóng: "(đóng|đậy lại|hạ xuống)"
@@ -348,6 +348,7 @@ expansion_rules:
   in: "(trong|ở|tại|của)"
   position: "{position}[[ ]%| phần trăm]"
   volume: "{volume:volume_level}[[ ]%| phần trăm]"
+  turn_off: "tắt"
 
   # Questions
   what_is_the_class_of_name: "(<what_is> lớp <class> (của|trong|từ|(được chỉ ra|được đo) bởi) <name> [trong <area>]|<what_is> <name> ['s] <class> [trong <area>]|<what_is> <area> <name>['s] <class>)"

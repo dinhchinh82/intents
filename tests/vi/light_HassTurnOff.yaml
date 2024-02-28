@@ -47,10 +47,10 @@ tests:
     intent:
       name: HassTurnOff
       context:
-        area: Phòng khách
+        area: phòng khách
       slots:
         domain: light
-        area: Phòng khách
+        area: phòng khách
     response: "Đã tắt đèn"
 
   - sentences:
@@ -62,8 +62,8 @@ tests:
     intent:
       name: HassTurnOff
       context:
-        area: Phòng khách
+        area: phòng khách
       slots:
         domain: light
-        area: Phòng khách
+        area: phòng khách
     response: "Đã tắt đèn"

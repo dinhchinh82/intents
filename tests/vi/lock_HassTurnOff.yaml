@@ -7,7 +7,7 @@ tests:
       context:
         domain: lock
       slots:
-        name: Cửa trước
+        name: cửa trước
     response: "Đã mở khóa"
 
   - sentences:
@@ -19,7 +19,7 @@ tests:
     intent:
       name: HassTurnOff
       slots:
-        area: Bếp
+        area: bếp
         domain: lock
         name: tất cả
     response: "Đã mở khóa"

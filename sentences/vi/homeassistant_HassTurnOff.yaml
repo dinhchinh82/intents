@@ -3,7 +3,7 @@ intents:
   HassTurnOff:
     data:
       - sentences:
-          - "<turn> tắt (<area> <name>|<name> [trong <area>])"
+          - "<turn> tắt (<area> <name>|<name> [<area>])"
           - "[<turn>] (<area> <name>|<name> [trong <area>]) thành tắt"
           - "hủy kích hoạt (<area> <name>|<name> [trong <area>])"
         excludes_context:
