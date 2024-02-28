@@ -2,15 +2,15 @@ language: vi
 tests:
   # Apparent power
   - sentences:
-      - "công suất hiển thị bởi thiết bị công suất hiển thị là bao nhiêu?"
+      - "công suất hiển thị bởi công suất biểu kiến của thiết bị là bao nhiêu?"
     intent:
       name: HassGetState
       slots:
         domain: sensor
         device_class: apparent_power
-        name: "Thiết bị công suất hiển thị"
+        name: "công suất biểu kiến của thiết bị"
     response: "Công suất hiển thị của thiết bị là 2 VA"
-  
+
   # AQI
   - sentences:
       - "chỉ số chất lượng không khí của cảm biến chất lượng không khí trong bếp là bao nhiêu?"

@@ -30,7 +30,7 @@ tests:
     response: "Đã mở cửa sổ"
 
   - sentences:
-      - "mở rèm trái"
+      - "mở rèm cửa bên trái"
     intent:
       name: HassTurnOn
       slots:
