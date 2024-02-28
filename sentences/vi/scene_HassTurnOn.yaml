@@ -3,8 +3,8 @@ intents:
   HassTurnOn:
     data:
       - sentences:
-          - "[kích hoạt] <name> [cảnh]"
-          - "<name> bật"
+          - "[kích hoạt] [cảnh] <name> "
+          - "bật <name>"
           - "<turn> (<name> [cảnh];bật)"
           - "(chuyển đổi|chuyển) sang (<name> [cảnh]|cảnh <name>)"
         requires_context:

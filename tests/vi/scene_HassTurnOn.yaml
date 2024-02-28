@@ -10,7 +10,7 @@ tests:
       name: HassTurnOn
       slots:
         domain: scene
-        name: "Chế độ tiệc"
+        name: "chế độ tiệc"
     response: "Đã kích hoạt"
   - sentences:
       - "kích hoạt chế độ tiệc trong phòng bếp"

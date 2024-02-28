@@ -70,5 +70,5 @@ responses:
         {% if state == "not_home" %}
           {{ slots.name | capitalize }} đang vắng nhà
         {% else %}
-          {{ slots.name | capitalize }} đang ở tại {{ state.state }}
+          {{ slots.name | capitalize }} đang ở {{ state.state }}
         {% endif %}

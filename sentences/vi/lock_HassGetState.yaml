@@ -11,14 +11,14 @@ intents:
           domain: lock
 
       - sentences:
-          - "(có|liệu) [có] bất kỳ cửa nào {lock_states:state} [trong <area>] không"
-          - "(có|liệu) [có] bất kỳ cửa {lock_states:state} nào [trong <area>] không"
+          - "(có|liệu) [có] cửa nào {lock_states:state} [trong <area>] không"
+          - "(có|liệu) [có] cửa {lock_states:state} nào [trong <area>] không"
         response: any
         slots:
           domain: lock
 
       - sentences:
-          - "tất cả [các] cửa {lock_states:state} [trong <area>] có phải không"
+          - "tất cả [các] cửa [đã được] {lock_states:state} [trong <area>] [có phải không|chưa]?"
         response: all
         slots:
           domain: lock

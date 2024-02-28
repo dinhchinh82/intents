@@ -118,7 +118,7 @@ lists:
     values:
       - in: "khóa"
         out: "locked"
-      - in: "mở khóa"
+      - in: "chưa khóa"
         out: "unlocked"
 
   # binary_sensor

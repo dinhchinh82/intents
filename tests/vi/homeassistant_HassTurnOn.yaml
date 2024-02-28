@@ -10,7 +10,7 @@ tests:
     intent:
       name: HassTurnOn
       slots:
-        name: Quạt Trần
+        name: quạt trần
     response: "Đã bật quạt"
 
   - sentences:

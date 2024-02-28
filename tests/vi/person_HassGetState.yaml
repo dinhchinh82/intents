@@ -1,7 +1,7 @@
 language: vi
 tests:
   - sentences:
-      - "Joseph ở đâu"
+      - "Joseph đang ở đâu"
     intent:
       name: HassGetState
       slots:

@@ -1,17 +1,17 @@
 language: vi
 tests:
   - sentences:
-      - "cửa chính đã khóa chưa ?"
+      - "cửa trước đã khóa chưa ?"
     intent:
       name: HassGetState
       slots:
         domain: lock
-        name: "Cửa Chính"
+        name: "Cửa trước"
         state: "locked"
     response: "Có"
 
   - sentences:
-      - "có cửa nào chưa được khóa không?"
+      - "có cửa nào chưa khóa không"
     intent:
       name: HassGetState
       slots:
@@ -20,7 +20,7 @@ tests:
     response: "Có, Cửa sau"
 
   - sentences:
-      - "có cửa nào đang mở không?"
+      - "có cửa chưa khóa nào không?"
     intent:
       name: HassGetState
       slots:

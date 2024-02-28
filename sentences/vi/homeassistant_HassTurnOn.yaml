@@ -3,7 +3,7 @@ intents:
   HassTurnOn:
     data:
       - sentences:
-          - "<turn> bật (<area> <name>|<name> [trong <area>])"
+          - "<turn> (<area> <name>|<name> [trong <area>])"
           - "[<turn>] (<area> <name>|<name> [trong <area>]) thành bật"
           - "kích hoạt (<area> <name>|<name> [trong <area>])"
         excludes_context:
