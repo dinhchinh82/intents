@@ -336,7 +336,7 @@ expansion_rules:
   where_is: "(ở đâu|nằm ở đâu)"
   brightness: "{brightness}[[ ]%| phần trăm]"
   light: "[cái] (đèn|ánh sáng)"
-  turn: "(bật|chuyển|đổi)"
+  turn: "(kích hoạt|bật|chuyển|đổi)"
   temp: "(nhiệt|nhiệt độ)"
   temperature: "{temperature}[ ][°|độ][ ][{temperature_unit}]"
   mở: "(mở|nâng lên)"

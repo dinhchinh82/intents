@@ -1,18 +1,18 @@
 language: vi
 areas:
-  - name: "Bếp"
+  - name: "bếp"
     id: "kitchen"
 
-  - name: "Phòng khách"
+  - name: "phòng khách"
     id: "living_room"
 
-  - name: "Phòng ngủ"
+  - name: "phòng ngủ"
     id: "bedroom"
 
   - name: "Gara"
     id: "garage"
 
-  - name: "Lối vào"
+  - name: "lối vào"
     id: "entrance"
 
   - name: "Văn phòng"
@@ -124,10 +124,10 @@ entities:
     id: "lock.side_door"
     state: "locked"
 
-  - name: "See you again"
+  - name: "chế độ tiệc"
     id: "scene.party_mode"
 
-  - name: "Che độ lén lút"
+  - name: "chế độ ẩn danh"
     id: "script.stealth_mode"
 
   # https://www.home-assistant.io/integrations/binary_sensor/

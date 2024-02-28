@@ -1,7 +1,7 @@
 language: vi
 tests:
   - sentences:
-      - thêm táo vào danh sách mua sắm của tôi
+      - thêm táo vào danh sách mua sắm
       - đặt táo vào danh sách
     intent:
       name: HassShoppingListAddItem

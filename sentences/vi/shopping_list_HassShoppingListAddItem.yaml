@@ -7,5 +7,5 @@ intents:
           - đặt <item> (vào|lên) <my_list>
         response: item_added
         expansion_rules:
-          my_list: "[ danh sách| sách] mua sắm của [mình|tôi]"
+          my_list: "[ danh sách| sách] mua sắm"
           item: "{shopping_list_item:item}"
