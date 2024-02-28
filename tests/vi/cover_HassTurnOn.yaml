@@ -14,7 +14,7 @@ tests:
     intent:
       name: HassTurnOn
       slots:
-        area: Bếp
+        area: bếp
         domain: cover
         device_class: window
     response: "Đã mở cửa sổ"
@@ -24,7 +24,7 @@ tests:
     intent:
       name: HassTurnOn
       slots:
-        area: Bếp
+        area: bếp
         domain: cover
         device_class: window
     response: "Đã mở cửa sổ"
@@ -34,18 +34,18 @@ tests:
     intent:
       name: HassTurnOn
       slots:
-        name: Bình phong Trái
+        name: rèm trái
       context:
         domain: cover
         device_class: curtain
     response: "Đã mở"
 
   - sentences:
-      - "mở bình phong trái trong phòng khách"
+      - "mở rèm trái trong phòng khách"
     intent:
       name: HassTurnOn
       slots:
-        name: Bình phong Trái
+        name: Bình phong rái
         area: Phòng Khách
       context:
         domain: cover

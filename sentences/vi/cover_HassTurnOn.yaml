@@ -17,7 +17,7 @@ intents:
 
       - sentences:
           - "<mở> {cover_classes:device_class} [trong <area>]"
-          - "<mở> {cover_classes:device_class} ở <area>"
+          - "<mở> {cover_classes:device_class} <area>"
         slots:
           domain: cover
         response: cover_device_class
@@ -25,7 +25,7 @@ intents:
       - sentences:
           - "<mở> {cover_classes:device_class}[<in_here>]"
         expansion_rules:
-          in_here: "[ trong] đây"
+          in_here: "[trong] đây"
         slots:
           domain: cover
         response: cover_device_class

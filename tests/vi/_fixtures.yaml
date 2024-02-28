@@ -346,7 +346,7 @@ entities:
     attributes:
       device_class: vibration
 
-  - name: "Cửa sổ chỗ trữ đồ"
+  - name: "cửa sổ"
     id: "binary_sensor.shed_window"
     state:
       in: "mở"
