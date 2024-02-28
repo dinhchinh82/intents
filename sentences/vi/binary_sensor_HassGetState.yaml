@@ -5,7 +5,8 @@ intents:
       # https://www.home-assistant.io/integrations/binary_sensor/
       # Pin
       - sentences:
-          - "(is|are) <name> [pin] {bs_battery_states:state} [trong <area>]"
+          # - "(is|are) <name> [pin] {bs_battery_states:state} [trong <area>]"
+          - "[liệu[rằng]|có phải] [pin] <name> [pin] [đang][có] {bs_battery_states:state} [không|chăng] [trong|ở|tại <area>]"
         response: one_yesno
         requires_context:
           domain: binary_sensor
@@ -640,7 +641,7 @@ intents:
           domain: binary_sensor
           device_class: presence
 
-       # Vấn đề
+        # Vấn đề
       - sentences:
           - "có [bất kỳ] vấn đề nào với <name> [tại <area>] không"
         response: one_yesno
@@ -749,7 +750,7 @@ intents:
           domain: binary_sensor
           device_class: smoke
 
-       # Âm thanh
+        # Âm thanh
       - sentences:
           - "<name> (có|đang) {bs_sound_states:state} [tại <area>] không"
         response: one_yesno
@@ -828,7 +829,7 @@ intents:
 
       - sentences:
           - "(nào|cái nào) cập nhật [(firmware|phần mềm)] (có|đang) [có sẵn] [tại <area>] không"
-        response: which 
+        response: which
         slots:
           domain: binary_sensor
           device_class: update

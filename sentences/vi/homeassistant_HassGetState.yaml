@@ -3,7 +3,8 @@ intents:
   HassGetState:
     data:
       - sentences:
-          - (bạn có biết|cho tôi biết|<what_is>) [trạng thái [hiện tại] của] <name> [trong <area>]
+          - "[bạn có biết|cho tôi biết|<what_is>] [trạng thái [hiện tại] của] <name> [là] <what_is> [trong <area>]"
+          - "[bạn có biết|cho tôi biết|<what_is>] [trạng thái [hiện tại] của] <name> [là] [trong <area>] <what_is>"
         response: one
         excludes_context:
           domain:

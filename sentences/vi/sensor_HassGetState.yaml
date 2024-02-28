@@ -14,7 +14,7 @@ intents:
           domain: sensor
           device_class: apparent_power
         expansion_rules:
-          class: "công suất tỏa ra"
+          class: "(công suất tỏa ra|công suất biểu kiến|công suất)"
 
       # AQI
       - sentences:

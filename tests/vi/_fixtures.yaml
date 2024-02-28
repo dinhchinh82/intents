@@ -15,7 +15,7 @@ areas:
   - name: "lối vào"
     id: "entrance"
 
-  - name: "văn phòng"
+  - name: "Văn phòng"
     id: "office"
 entities:
   - name: "Đèn phòng ngủ"
@@ -43,7 +43,7 @@ entities:
     area: "kitchen"
     state: "on"
 
-  - name: "tủ bếp"
+  - name: "Tủ bếp"
     id: "light.kitchen_cabinets"
     area: "kitchen"
     state: "on"
@@ -53,14 +53,14 @@ entities:
     area: "living_room"
     state: "off"
 
-  - name: "rèm trái"
+  - name: "Rèm cửa bên trái"
     id: "cover.curtain_left"
     area: "living_room"
     state: "open"
     attributes:
       device_class: curtain
 
-  - name: "rèm phải"
+  - name: "Rèm cửa bên phải"
     id: "cover.curtain_right"
     area: "living_room"
     state: "closed"
@@ -111,16 +111,16 @@ entities:
     attributes:
       current_temperature: 1
 
-  - name: "cửa trước"
+  - name: "Cửa trước"
     id: "lock.front_door"
     area: "entrance"
     state: "locked"
 
-  - name: "cửa sau"
+  - name: "Cửa sau"
     id: "lock.back_door"
     state: "unlocked"
 
-  - name: "cửa bên"
+  - name: "Cửa bên"
     id: "lock.side_door"
     state: "locked"
 
@@ -355,7 +355,7 @@ entities:
       device_class: window
 
   # https://www.home-assistant.io/integrations/sensor/
-  - name: "Công suất hiện trạng của thiết bị"
+  - name: "công suất biểu kiến của thiết bị"
     id: "sensor.appliance_apparent_power"
     state: "2"
     attributes:

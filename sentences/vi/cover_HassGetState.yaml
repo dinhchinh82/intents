@@ -3,7 +3,7 @@ intents:
   HassGetState:
     data:
       - sentences:
-          - "<name> có {cover_states:state} không [tại <area>]"
+          - "<name> [đã|có|được] {cover_states:state} ([hay]không|chưa) [tại <area>]"
         response: one_yesno
         requires_context:
           domain: cover

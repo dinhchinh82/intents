@@ -3,7 +3,7 @@ intents:
   HassTurnOff:
     data:
       - sentences:
-          - "<đóng> <name> [tại <area>]"
+          - "<đóng> <name> [tại|trong|của|ở <area>]"
         requires_context:
           domain: cover
         response: cover
@@ -16,8 +16,8 @@ intents:
         response: cover_device_class
 
       - sentences:
-          - "<đóng> {cover_classes:device_class} [tại <area>]"
-          - "<đóng> {cover_classes:device_class} ở <area>"
+          - "<đóng> {cover_classes:device_class} [tại|trong|của|ở <area>]"
+          - "<đóng> {cover_classes:device_class} (tại|trong|của|ở) <area>"
         slots:
           domain: cover
         response: cover_device_class

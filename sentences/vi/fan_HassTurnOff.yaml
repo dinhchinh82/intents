@@ -3,12 +3,12 @@ intents:
   HassTurnOff:
     data:
       - sentences:
-          - "<turn_off>[tất cả] [cái] quạt [ở] [trong] <area>"
-          - "<turn_off> tắt quạt [tại] <area>"
-          - "[<turn_off>] [tất cả] quạt [ở] <area>"
-          - "[<turn_off>] tắt [tất cả] [cái] quạt [ở] <area>"
-          - "dừng [tất cả] [cái] quạt [tại] <area>"
-          - "dừng [tất cả] quạt [tại] <area>"
+          - "[<turn>] tắt [tất cả] [cái] quạt [ở|trong|tại|của] <area>"
+          - "[<turn>] tắt quạt [ở|trong|tại|của] <area>"
+          - "[<turn>] tắt [tất cả] quạt [ở|trong|tại|của] <area>"
+          - "[<turn>] tắt [tất cả] [cái] quạt [ở|trong|tại|của] <area>"
+          - "dừng [tất cả] [cái] quạt [ở|trong|tại|của] <area>"
+          - "dừng [tất cả] quạt [ở|trong|tại|của] <area>"
         slots:
           domain: "fan"
           name: "all"
@@ -23,9 +23,9 @@ intents:
           name: "all"
 
       - sentences:
-          - "<turn> tắt[ tất cả][ cái] quạt[<in_here>]"
-          - "<turn>[ tất cả][ cái] quạt tắt[<in_here>]"
-          - "<turn> tắt[ tất cả][ cái] quạt"
+          - "[<turn>] tắt[ tất cả][ cái] quạt[<in_here>]"
+          - "[<turn>][ tất cả][ cái] quạt tắt[<in_here>]"
+          - "[<turn>] tắt[ tất cả][ cái] quạt"
         response: "fans_area"
         expansion_rules:
           in_here: "[ở] đây"

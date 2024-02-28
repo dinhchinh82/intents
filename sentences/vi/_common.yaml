@@ -101,6 +101,8 @@ lists:
       - in: rèm cửa
         out: blind
       - in: rèm
+        out: blind
+      - in: màn cửa
         out: curtain
       - in: cửa
         out: door
@@ -108,7 +110,7 @@ lists:
         out: garage
       - in: cổng
         out: gate
-      - in: rèm cuốn
+      - in: rèm
         out: shade
       - in: cửa chớp
         out: shutter
@@ -124,6 +126,8 @@ lists:
   # binary_sensor
   bs_battery_states:
     values:
+      - in: "yếu"
+        out: "on"
       - in: "thấp"
         out: "on"
       - in: "bình thường"
@@ -332,13 +336,13 @@ lists:
 expansion_rules:
   name: "[cái] {name}"
   area: "[cái] {area}"
-  what_is: "(là cái gì|là gì)"
+  what_is: "(là cái gì|là gì|bao nhiêu |là bao nhiêu|bằng bao nhiêu)"
   where_is: "(ở đâu|nằm ở đâu)"
   brightness: "{brightness}[[ ]%| phần trăm]"
   light: "[cái] (đèn|ánh sáng)"
   turn: "(kích hoạt|bật|chuyển|đổi)"
   temp: "(nhiệt|nhiệt độ)"
-  temperature: "{temperature}[°|độ][ ][{temperature_unit}]"
+  temperature: "{temperature}[ ][°|độ][ ][{temperature_unit}]"
   mở: "(mở|nâng lên)"
   open: "(mở|nâng lên)"
   đóng: "(đóng|đậy lại|hạ xuống)"
@@ -348,10 +352,13 @@ expansion_rules:
   in: "(trong|ở|tại|của)"
   position: "{position}[[ ]%| phần trăm]"
   volume: "{volume:volume_level}[[ ]%| phần trăm]"
-  turn_off: "tắt"
 
   # Questions
-  what_is_the_class_of_name: "(<what_is> lớp <class> (của|trong|từ|(được chỉ ra|được đo) bởi) <name> [trong <area>]|<what_is> <name> ['s] <class> [trong <area>]|<what_is> <area> <name>['s] <class>)"
+  what_is_the_class_of_name: "(
+    <class> (của|trong|từ|(được đo|hiển thị|được tính|được chỉ ra) (bởi|bằng|tại) ) <name> [trong <area>] [là|bằng] <what_is>
+    |
+    <name> (có|hiển thị|cho thấy) <class> [là|bằng] <what_is> [ở|trong|tại|của<area>]
+    )"
 skip_words:
   - "làm ơn"
   - "có thể"
