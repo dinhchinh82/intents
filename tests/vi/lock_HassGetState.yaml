@@ -29,7 +29,7 @@ tests:
     response: "Có, Cửa sau"
 
   - sentences:
-      - "tất cả cửa đã được khóa chưa?"
+      - "tất cả cửa khóa chưa?"
     intent:
       name: HassGetState
       slots:
