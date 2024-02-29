@@ -66,7 +66,7 @@ lists:
         out: "fahrenheit"
   brightness_level:
     values:
-      - in: (tối đa|cực đại|cao nhất)
+      - in: (tối đa|cực đại|cao nhất|hết mức)
         out: 100
       - in: (tối thiểu|thấp nhất)
         out: 1
@@ -348,7 +348,7 @@ expansion_rules:
   đóng: "(đóng|đậy lại|hạ xuống)"
   close: "(đóng|đậy lại|hạ xuống)"
   set: "(đặt|tạo|thay đổi|bật)"
-  numeric_value_set: "(đặt|thay đổi|bật|tăng|giảm|tạo)"
+  numeric_value_set: "(đặt|thay đổi|bật|tăng|giảm|tạo|cài)"
   in: "(trong|ở|tại|của)"
   position: "{position}[[ ]%| phần trăm]"
   volume: "{volume:volume_level}[[ ]%| phần trăm]"

@@ -58,7 +58,7 @@ tests:
     intent:
       name: HassTurnOn
       slots:
-        area: Bếp
+        area: bếp
         domain: cover
         device_class: blind
     response: "Đã mở rèm"

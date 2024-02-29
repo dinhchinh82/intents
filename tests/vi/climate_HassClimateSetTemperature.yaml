@@ -23,7 +23,7 @@ tests:
     intent:
       name: HassClimateSetTemperature
       slots:
-        area: Phòng ngủ
+        area: phòng ngủ
         temperature: 50
         temperature_unit: độ Fahrenheit
     response: "Đã đặt nhiệt độ"

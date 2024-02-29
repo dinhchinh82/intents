@@ -1,14 +1,13 @@
 language: vi
 tests:
   - sentences:
-      - "đặt rèm phòng ngủ ở mức 50%"
+      - "đặt rèm cửa phòng ngủ ở mức 50%"
     intent:
       name: HassSetPosition
       slots:
-        name: "Rèm Phòng ngủ"
+        name: "rèm cửa phòng ngủ"
         position: 50
-    response: "Đã đặt vị trí"
-
+    response: "Đã thiết lập vị trí"
   - sentences:
       - "đặt van chính ở mức 100"
     intent:
@@ -16,4 +15,4 @@ tests:
       slots:
         name: "van chính"
         position: 100
-    response: "Đã đặt theo yêu cầu"
+    response: "Đã thiết lập vị trí"

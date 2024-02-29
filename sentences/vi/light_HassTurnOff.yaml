@@ -3,16 +3,16 @@ intents:
   HassTurnOff:
     data:
       - sentences:
-          - "<turn> tắt (<light_devices> <name> <area>|<light_devices> <name> [trong <area>])"
+          - "[<turn>] tắt (<light_devices> <name> <area>|<light_devices> <name> [trong <area>])"
           - "[<turn>] tắt (<light_devices> <name> <area>|<light_devices> <name> [trong <area>])"
           - "vô hiệu hóa (<light_devices> <name> <area>|<light_devices> <name> [trong <area>])"
         expansion_rules:
-          light_devices: "(bóng đèn|công tắc [đèn])"
+          light_devices: "(bóng đèn|công tắc [đèn]|đèn[điện]|ánh sáng)"
         requires_context:
           domain: light
       - sentences:
-          - "<turn> tắt [tất cả] <light> ở <area>"
-          - "<turn> tắt [tất cả] <area> <light>"
+          - "[<turn>] tắt [tất cả] <light> ở <area>"
+          - "[<turn>] tắt [tất cả] <area> <light>"
           - "[<turn>] tắt [tất cả] <area> <light>"
           - "[<turn>] tắt [tất cả] <light> [trong] <area>"
           - "vô hiệu hóa [tất cả] <light> [trong] <area>"
@@ -22,21 +22,21 @@ intents:
         response: "lights_area"
 
       - sentences:
-          - "[<turn>] (tắt [tất cả] <light>|<light> tắt [khắp nơi])"
-          - "vô hiệu hóa (tất cả <light>|<light> khắp nơi)"
+          - "[<turn>] (tắt|vô hiệu hóa|ngừng) [tất cả|mọi] <light> [ở|tại] [tất cả] (mọi nơi|khắp nơi|chỗ|vị trí) "
         response: "light_all"
         slots:
           domain: light
-          name: "tất cả"
+          # name: "tất cả"
 
       # Tắt đèn trong cùng khu vực của thiết bị vệ tinh
       - sentences:
-          - "<turn> tắt[ hết] <light>[<tại_đây>]"
-          - "<turn>[ hết] <light>( tắt;<tại_đây>)"
-          - "<turn>[ hết] <light> tắt"
+          - "[<turn>] tắt [<hết>] <light> [<tại_đây>]"
+          - "[<turn>] [<hết>] <light>( tắt;<tại_đây>)"
+          - "[<turn>] [<hết>] <light> tắt"
         response: "lights_area"
         expansion_rules:
-          tại_đây: "[ tại đây]"
+          tại_đây: "[ tại đây|ở chỗ này|ở đây|ở vùng này]"
+          hết: "(tất cả|mọi|hết)"
         slots:
           domain: light
         requires_context:

@@ -18,7 +18,7 @@ areas:
   - name: "văn phòng"
     id: "office"
 entities:
-  - name: "Đèn phòng ngủ"
+  - name: "đèn phòng ngủ"
     id: "light.bedroom_lamp"
     area: "bedroom"
     state: "off"
@@ -67,7 +67,7 @@ entities:
     attributes:
       device_class: curtain
 
-  - name: "Rèm cửa phòng ngủ"
+  - name: "rèm cửa phòng ngủ"
     id: "cover.bedroom"
     area: "bedroom"
     state: "closed"
@@ -705,7 +705,7 @@ entities:
     id: "person.john"
     state: "không ở nhà"
 
-  - name: "Trader Joe's"
+  - name: "Trader Joes"
     id: "todo.trader_joes"
     state: ""
 

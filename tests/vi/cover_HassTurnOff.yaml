@@ -14,7 +14,7 @@ tests:
     intent:
       name: HassTurnOff
       slots:
-        area: Bếp
+        area: bếp
         domain: cover
         device_class: window
     response: "Đã đóng cửa sổ"
@@ -24,7 +24,7 @@ tests:
     intent:
       name: HassTurnOff
       slots:
-        area: Bếp
+        area: bếp
         domain: cover
         device_class: window
     response: "Đã đóng cửa sổ"
@@ -58,7 +58,7 @@ tests:
     intent:
       name: HassTurnOff
       slots:
-        area: Phòng ngủ
+        area: phòng ngủ
         domain: cover
         device_class: blind
 

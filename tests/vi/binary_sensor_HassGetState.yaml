@@ -965,7 +965,7 @@ tests:
         domain: binary_sensor
         device_class: smoke
         state: "on"
-    response: "Không, cảm biến khói Bếp không được kích hoạt"
+    response: "Không, cảm biến khói bếp không được kích hoạt"
 
   - sentences:
       - "cảm biến khói nào đã kích hoạt?"
