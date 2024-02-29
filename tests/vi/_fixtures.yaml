@@ -15,7 +15,7 @@ areas:
   - name: "lối vào"
     id: "entrance"
 
-  - name: "Văn phòng"
+  - name: "văn phòng"
     id: "office"
 entities:
   - name: "Đèn phòng ngủ"
@@ -104,7 +104,7 @@ entities:
     attributes:
       current_temperature: 68
 
-  - name: "Thiết bị điều chỉnh nhiệt độ văn phòng"
+  - name: "máy điều hòa văn phòng"
     id: "climate.office_thermostat"
     area: "office"
     state: "heat"
@@ -131,15 +131,15 @@ entities:
     id: "script.stealth_mode"
 
   # https://www.home-assistant.io/integrations/binary_sensor/
-  - name: "Điện thoại"
+  - name: "điện thoại"
     id: "binary_sensor.phone_battery"
     state:
-      in: "normal"
+      in: "bình thường"
       out: "off"
     attributes:
       device_class: battery
 
-  - name: "Điện thoại"
+  - name: "điện thoại"
     id: "binary_sensor.phone_battery_charging"
     state:
       in: "đang sạc"
@@ -151,20 +151,20 @@ entities:
     id: "binary_sensor.co2"
     area: "kitchen"
     state:
-      in: "rõ ràng"
+      in: "trong lành"
       out: "off"
     attributes:
       device_class: carbon_monoxide
 
-  - name: "Ống nước"
+  - name: "ống nước"
     id: "binary_sensor.computer_cold"
     state:
-      in: "normal"
+      in: "bình thường"
       out: "off"
     attributes:
       device_class: cold
 
-  - name: "Điện thoại"
+  - name: "điện thoại"
     id: "binary_sensor.phone_connectivity"
     state:
       in: "kết nối"
@@ -255,7 +255,7 @@ entities:
     attributes:
       device_class: opening
 
-  - name: "Điện thoại"
+  - name: "điện thoại"
     id: "binary_sensor.phone_plug"
     state:
       in: "đã cắm vào"
@@ -271,7 +271,7 @@ entities:
     attributes:
       device_class: power
 
-  - name: "Điện thoại"
+  - name: "điện thoại"
     id: "binary_sensor.presence"
     state:
       in: "vắng mặt"
@@ -330,7 +330,7 @@ entities:
     attributes:
       device_class: tamper
 
-  - name: "Điện thoại"
+  - name: "điện thoại"
     id: "binary_sensor.phone_update"
     state:
       in: "có bản cập nhật"
@@ -338,7 +338,7 @@ entities:
     attributes:
       device_class: update
 
-  - name: "Điện thoại"
+  - name: "điện thoại"
     id: "binary_sensor.phone_vibration"
     state:
       in: "không rung"
@@ -375,7 +375,7 @@ entities:
       device_class: atmospheric_pressure
       unit_of_measurement: "hPa"
 
-  - name: "Điện thoại của tôi"
+  - name: "điện thoại của tôi"
     id: "sensor.my_phone_battery"
     state: "98"
     attributes:

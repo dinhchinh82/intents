@@ -42,8 +42,8 @@ tests:
       slots:
         domain: sensor
         device_class: battery
-        name: "Điện thoại của tôi"
-    response: "Điện thoại của tôi còn 98 %"
+        name: "điện thoại của tôi"
+    response: "điện thoại của tôi còn 98 %"
 
   # CO2
   - sentences:

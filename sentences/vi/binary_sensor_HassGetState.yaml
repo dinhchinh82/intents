@@ -16,28 +16,28 @@ intents:
           device_class: battery
 
       - sentences:
-          - "(is|are) any pin {bs_battery_states:state} [trong <area>]"
+          - " [liệu [rằng]|phải chăng|có thể] có [bất kỳ] [một] pin [nào] [có]  [đang] {bs_battery_states:state} [không] [trong|ở|tại <area>] [không]"
         response: any
         slots:
           domain: binary_sensor
           device_class: battery
 
       - sentences:
-          - "are all [các] pin {bs_battery_states:state} [trong <area>]"
+          - " [liệu [rằng]|phải chăng|có phải] tất cả [các] pin [đều] [có] [đang] {bs_battery_states:state} [[đúng]không] [trong|ở|tại <area>] "
         response: all
         slots:
           domain: binary_sensor
           device_class: battery
 
       - sentences:
-          - "(which|what) pin (is|are) {bs_battery_states:state} [trong <area>]"
+          - " [[có]những|các] pin nào [đang] {bs_battery_states:state} [trong|ở|tại <area>] "
         response: which
         slots:
           domain: binary_sensor
           device_class: battery
 
       - sentences:
-          - "có bao nhiêu pin (is|are) {bs_battery_states:state} [trong <area>]"
+          - " [có] bao nhiêu pin [đang] {bs_battery_states:state} [trong|ở|tại <area>] "
         response: how_many
         slots:
           domain: binary_sensor
@@ -45,7 +45,7 @@ intents:
 
       # Sạc pin
       - sentences:
-          - "(is|are) <name> [pin] {bs_battery_charging_states:state} [trong <area>]"
+          - " [liệu [rằng]|phải chăng|có thể] ([pin] [của|trong] <name>|<name> [pin]) ([có] [đang]|[có][đang]) {bs_battery_charging_states:state} [không] [trong|ở|tại <area>] "
         response: one_yesno
         requires_context:
           domain: binary_sensor
@@ -55,28 +55,28 @@ intents:
           device_class: battery_charging
 
       - sentences:
-          - "(is|are) any pin {bs_battery_charging_states:state} [trong <area>]"
+          - " [liệu [rằng]|phải chăng|có thể] có [bất kỳ] [một] pin [nào] [có]  [đang] {bs_battery_charging_states:state} [không] [trong|ở|tại <area>] [không]"
         response: any
         slots:
           domain: binary_sensor
           device_class: battery_charging
 
       - sentences:
-          - "are all [các] pin {bs_battery_charging_states:state} [trong <area>]"
+          - " [liệu [rằng]|phải chăng|có phải] tất cả [các] pin [đều] [có] [đang] {bs_battery_charging_states:state} [[đúng]không] [trong|ở|tại <area>] "
         response: all
         slots:
           domain: binary_sensor
           device_class: battery_charging
 
       - sentences:
-          - "(which|what) pin (is|are) {bs_battery_charging_states:state} [trong <area>]"
+          - " [[có]những|các] pin nào [đang] {bs_battery_charging_states:state} [trong|ở|tại <area>] "
         response: which
         slots:
           domain: binary_sensor
           device_class: battery_charging
 
       - sentences:
-          - "có bao nhiêu pin (is|are) {bs_battery_charging_states:state} [trong <area>]"
+          - " [có] bao nhiêu pin [đang] {bs_battery_charging_states:state} [trong|ở|tại <area>] "
         response: how_many
         slots:
           domain: binary_sensor
@@ -84,7 +84,7 @@ intents:
 
       # khí CO
       - sentences:
-          - "(is|are) <name> {bs_carbon_monoxide_states:state} [trong <area>]"
+          - " [liệu [rằng]|phải chăng|có thể] <name> ([có] [đang]|[có][đang]) {bs_carbon_monoxide_states:state} [không] [trong|ở|tại <area>] "
         response: one_yesno
         requires_context:
           domain: binary_sensor
@@ -94,15 +94,14 @@ intents:
           device_class: carbon_monoxide
 
       - sentences:
-          - "(is|are) cảm biến khí CO {bs_carbon_monoxide_states:state} [trong <area>]"
+          - " [liệu [rằng]|phải chăng|có thể] có [bất kỳ] [một] cảm biến [khí] (CO| monoxide carbon) [nào] [có]  [đang] {bs_carbon_monoxide_states:state} [không] [trong|ở|tại <area>] [không]"
         response: any
         slots:
           domain: binary_sensor
           device_class: carbon_monoxide
 
       - sentences:
-          - "có [bất kỳ] khí CO trong <area>"
-          - "có [bất kỳ] phát hiện khí CO trong <area>"
+          - " [liệu [rằng]|phải chăng|có thể] có [phát hiện] [bất kỳ] [một] [khí] (CO|monoxide carbon) [nào] [có] [không] [trong|ở|tại] <area> [không]"
         response: any
         slots:
           domain: binary_sensor
@@ -110,28 +109,28 @@ intents:
           state: "on"
 
       - sentences:
-          - "are all [các] cảm biến khí CO {bs_carbon_monoxide_states:state} [trong <area>]"
+          - " [liệu [rằng]|phải chăng|có phải] tất cả [các] cảm biến khí CO [đều] [có] [đang] {bs_carbon_monoxide_states:state} [[đúng]không] [trong|ở|tại <area>] "
         response: all
         slots:
           domain: binary_sensor
           device_class: carbon_monoxide
 
       - sentences:
-          - "(which|what) cảm biến khí CO (is|are) {bs_carbon_monoxide_states:state} [trong <area>]"
+          - " [[có]những|các] cảm biến khí CO nào [đang] {bs_carbon_monoxide_states:state} [trong|ở|tại <area>] "
         response: which
         slots:
           domain: binary_sensor
           device_class: carbon_monoxide
 
       - sentences:
-          - "có bao nhiêu cảm biến khí CO (is|are) {bs_carbon_monoxide_states:state} [trong <area>]"
+          - " [có] bao nhiêu cảm biến khí CO [đang] {bs_carbon_monoxide_states:state} [trong|ở|tại <area>] "
         response: how_many
         slots:
           domain: binary_sensor
           device_class: carbon_monoxide
       # Lạnh
       - sentences:
-          - "(is|are) <name> {bs_cold_states:state} [trong <area>]"
+          - " [liệu [rằng]|phải chăng|có thể] <name> ([có] [đang]|[có][đang]) {bs_cold_states:state} [không] [trong|ở|tại <area>] "
         response: one_yesno
         requires_context:
           domain: binary_sensor

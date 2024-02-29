@@ -44,7 +44,7 @@ responses:
             {% for name in no_match -%}
               {% if not loop.first and not loop.last %}, {% elif loop.last and not loop.first %} and {% endif -%}
               {{ name }}
-            {%- endfor %} {% if no_match | length > 1 %}are{% else %}is{% endif %} not {{ slots.state }}
+            {%- endfor %} không {{ slots.state }}
           {% endif %}
         {% endif %}
 

@@ -1,7 +1,7 @@
 language: vi
 tests:
   - sentences:
-      - "rèm bên trái đóng chưa?"
+      - "rèm cửa bên trái đóng chưa?"
     intent:
       name: HassGetState
       slots:

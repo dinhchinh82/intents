@@ -142,9 +142,9 @@ lists:
 
   bs_carbon_monoxide_states:
     values:
-      - in: "(đã phát hiện|đang kích hoạt|bật)"
+      - in: "(được phát hiện|phát hiện|đã phát hiện|bật|được bật)"
         out: "on"
-      - in: "bình thường"
+      - in: "(bình thường|trong lành)"
         out: "off"
 
   bs_cold_states:

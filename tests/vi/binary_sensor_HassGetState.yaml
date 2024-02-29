@@ -8,7 +8,7 @@ tests:
       slots:
         domain: "binary_sensor"
         device_class: "battery"
-        name: "Phone"
+        name: "điện thoại"
         state: "on"
     response: "Không, bình thường"
 
@@ -30,7 +30,7 @@ tests:
         domain: binary_sensor
         device_class: battery
         state: "on"
-    response: "Không, Phone không yếu"
+    response: "Không, điện thoại không yếu"
 
   - sentences:
       - "pin nào đang yếu?"
@@ -60,7 +60,7 @@ tests:
       slots:
         domain: "binary_sensor"
         device_class: "battery_charging"
-        name: "Phone"
+        name: "điện thoại"
         state: "on"
     response: "Có"
 
@@ -72,7 +72,7 @@ tests:
         domain: binary_sensor
         device_class: battery_charging
         state: "on"
-    response: "Có, Phone"
+    response: "Có, điện thoại"
 
   - sentences:
       - "tất cả pin có đang sạc không?"
@@ -92,7 +92,7 @@ tests:
         domain: binary_sensor
         device_class: battery_charging
         state: "on"
-    response: "Phone"
+    response: "điện thoại"
 
   - sentences:
       - "có bao nhiêu pin đang sạc?"
@@ -117,7 +117,7 @@ tests:
     response: "Không, trong lành"
 
   - sentences:
-      - "có cảm biến monoxide carbon nào được bật không?"
+      - "có cảm biến khí CO nào được bật không?"
     intent:
       name: HassGetState
       slots:
@@ -127,19 +127,19 @@ tests:
     response: "Không"
 
   - sentences:
-      - "có monoxide carbon nào trong bếp không?"
-      - "có phát hiện monoxide carbon nào trong bếp không?"
+      - "có khí CO nào trong bếp không?"
+      - "có phát hiện khí CO nào trong bếp không?"
     intent:
       name: HassGetState
       slots:
-        area: "Bếp"
+        area: "bếp"
         domain: binary_sensor
         device_class: carbon_monoxide
         state: "on"
     response: "Không"
 
   - sentences:
-      - "tất cả cảm biến monoxide carbon có được bật không?"
+      - "tất cả cảm biến khí CO có được bật không?"
     intent:
       name: HassGetState
       slots:
@@ -149,7 +149,7 @@ tests:
     response: "Không, CO2 không được bật"
 
   - sentences:
-      - "cảm biến monoxide carbon nào được bật?"
+      - "cảm biến khí CO nào được bật?"
     intent:
       name: HassGetState
       slots:
@@ -159,7 +159,7 @@ tests:
     response: "Không có"
 
   - sentences:
-      - "có bao nhiêu cảm biến monoxide carbon được bật?"
+      - "có bao nhiêu cảm biến khí CO được bật?"
     intent:
       name: HassGetState
       slots:
@@ -176,7 +176,7 @@ tests:
       slots:
         domain: "binary_sensor"
         device_class: "cold"
-        name: "Water Pipes"
+        name: "ống nước"
         state: "on"
     response: "Không, bình thường"
 
