@@ -34,18 +34,18 @@ tests:
     intent:
       name: HassTurnOn
       slots:
-        name: rèm trái
+        name: rèm cửa bên trái
       context:
         domain: cover
         device_class: curtain
     response: "Đã mở"
 
   - sentences:
-      - "mở rèm trái trong phòng khách"
+      - "mở rèm cửa bên trái trong phòng khách"
     intent:
       name: HassTurnOn
       slots:
-        name: rèm trái
+        name: rèm cửa bên trái
         area: phòng khách
       context:
         domain: cover

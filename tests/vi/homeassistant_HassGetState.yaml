@@ -6,8 +6,8 @@ tests:
     intent:
       name: HassGetState
       slots:
-        name: "Nhiệt độ Bên ngoài"
-    response: "Nhiệt độ bên ngoài là 42 °F"
+        name: "nhiệt độ bên ngoài"
+    response: "nhiệt độ bên ngoài là 42 °F"
 
   - sentences:
       - "đèn phòng ngủ có được bật không?"

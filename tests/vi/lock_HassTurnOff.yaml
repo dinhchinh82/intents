@@ -15,11 +15,10 @@ tests:
       - "mở các cửa trong bếp"
       - "mở cửa bếp"
       - "mở cửa trong bếp"
-      - "mở cửa trong bếp"
     intent:
       name: HassTurnOff
       slots:
         area: bếp
         domain: lock
-        name: tất cả
+        name: all
     response: "Đã mở khóa"

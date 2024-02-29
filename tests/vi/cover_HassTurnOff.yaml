@@ -30,22 +30,22 @@ tests:
     response: "Đã đóng cửa sổ"
 
   - sentences:
-      - "đóng rèm trái"
+      - "đóng rèm cửa bên trái"
     intent:
       name: HassTurnOff
       slots:
-        name: rèm trái
+        name: rèm cửa bên trái
       context:
         domain: cover
         device_class: curtain
     response: "Đã đóng"
 
   - sentences:
-      - "đóng rèm trái trong phòng khách"
+      - "đóng rèm cửa bên trái trong phòng khách"
     intent:
       name: HassTurnOff
       slots:
-        name: rèm trái
+        name: rèm cửa bên trái
         area: phòng khách
       context:
         domain: cover

@@ -6,7 +6,7 @@ tests:
       name: HassGetState
       slots:
         domain: cover
-        name: "rèm trái"
+        name: "rèm cửa bên trái"
         state: "closed"
     response: "Không, đang mở"
 
@@ -19,7 +19,7 @@ tests:
         area: "phòng khách"
         device_class: curtain
         state: "open"
-    response: "Có, rèm trái"
+    response: "Có, rèm cửa bên trái"
 
   - sentences:
       - "tất cả các rèm trong phòng khách đều đã mở chưa?"

@@ -10,7 +10,7 @@ tests:
     intent:
       name: HassTurnOn
       slots:
-        area: Phòng khách
+        area: phòng khách
         domain: light
     response: "Đã bật đèn"
 
@@ -20,10 +20,10 @@ tests:
     intent:
       name: HassTurnOn
       context:
-        area: Phòng khách
+        area: phòng khách
       slots:
         domain: light
-        area: Phòng khách
+        area: phòng khách
     response: "Đã bật đèn"
 
   - sentences:
@@ -35,8 +35,8 @@ tests:
     intent:
       name: HassTurnOn
       context:
-        area: Phòng khách
+        area: phòng khách
       slots:
         domain: light
-        area: Phòng khách
+        area: phòng khách
     response: "Đã bật đèn"
