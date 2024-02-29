@@ -12,7 +12,7 @@ tests:
       slots:
         area: phòng khách
         domain: light
-    response: "Đã bật đèn"
+    response: "đã bật đèn"
 
   - sentences:
       - "bật đèn"
@@ -24,7 +24,7 @@ tests:
       slots:
         domain: light
         area: phòng khách
-    response: "Đã bật đèn"
+    response: "đã bật đèn"
 
   - sentences:
       - "bật tất cả đèn"
@@ -39,4 +39,4 @@ tests:
       slots:
         domain: light
         area: phòng khách
-    response: "Đã bật đèn"
+    response: "đã bật đèn"

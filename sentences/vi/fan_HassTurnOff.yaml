@@ -7,14 +7,14 @@ intents:
           - " tắt [tất cả] [các] quạt [ở|trong|tại|của] <area>"
           - " tắt [tất cả] [cái] quạt [ở|trong|tại|của] <area>"
           - "dừng [tất cả] [cái] quạt [ở|trong|tại|của] <area>"
-          - "dừng [tất cả] quạt [ở|trong|tại|của] <area>"
+          - "dừng [tất cả] quạt [ở|trong|tại|của|ở trong] <area>"
         slots:
           domain: "fan"
           name: "all"
         response: fans_area
 
       - sentences:
-          - " (tắt hết [tất cả] quạt|[tất cả] quạt ở mọi nơi)"
+          - "(tắt [hết|tất cả] quạt [ở mọi nơi])"
           - "dừng (tất cả quạt|quạt ở mọi nơi)"
         response: "light_all"
         slots:

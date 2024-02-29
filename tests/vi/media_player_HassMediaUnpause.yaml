@@ -6,4 +6,4 @@ tests:
       name: HassMediaUnpause
       slots:
         name: "TV"
-    response: "Đã phát tiếp"
+    response: "đã phát tiếp"

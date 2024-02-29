@@ -15,7 +15,7 @@ tests:
         area: bếp
         domain: fan
         name: tất cả
-    response: "Đã bật quạt"
+    response: "đã bật quạt"
 
   - sentences:
       - "bật tất cả quạt"
@@ -29,4 +29,4 @@ tests:
       slots:
         domain: fan
         area: phòng khách
-    response: "Đã bật quạt"
+    response: "đã bật quạt"

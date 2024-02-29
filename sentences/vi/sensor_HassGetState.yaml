@@ -27,7 +27,7 @@ intents:
           domain: sensor
           device_class: aqi
         expansion_rules:
-          class: "(AQI|chỉ số chất lượng không khí)"
+          class: "(AQI|chỉ số chất lượng không khí|chỉ số)"
 
       # Atmospheric pressure
       - sentences:

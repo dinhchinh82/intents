@@ -7,7 +7,7 @@ tests:
       slots:
         domain: cover
         device_class: garage
-    response: "Đã mở cửa garage"
+    response: "đã mở cửa garage"
 
   - sentences:
       - "mở cửa sổ trong bếp"
@@ -17,7 +17,7 @@ tests:
         area: bếp
         domain: cover
         device_class: window
-    response: "Đã mở cửa sổ"
+    response: "đã mở cửa sổ"
 
   - sentences:
       - "mở cửa sổ bếp"
@@ -27,7 +27,7 @@ tests:
         area: bếp
         domain: cover
         device_class: window
-    response: "Đã mở cửa sổ"
+    response: "đã mở cửa sổ"
 
   - sentences:
       - "mở rèm cửa bên trái"
@@ -38,7 +38,7 @@ tests:
       context:
         domain: cover
         device_class: curtain
-    response: "Đã mở"
+    response: "đã mở"
 
   - sentences:
       - "mở rèm cửa bên trái trong phòng khách"
@@ -50,21 +50,19 @@ tests:
       context:
         domain: cover
         device_class: curtain
-    response: "Đã mở"
+    response: "đã mở"
 
   - sentences:
-      - "mở rèm cửa trong bếp"
-      - "mở rèm bếp"
+      - "mở rèm cuốn trong bếp"
     intent:
       name: HassTurnOn
       slots:
         area: bếp
         domain: cover
         device_class: blind
-    response: "Đã mở rèm"
+    response: "đã mở rèm cuốn"
 
   - sentences:
-      - "mở rèm"
       - "mở rèm trong phòng này"
     intent:
       name: HassTurnOn
@@ -73,5 +71,5 @@ tests:
       slots:
         domain: cover
         area: phòng khách
-        device_class: curtain
-    response: "Đã mở rèm"
+        device_class: shade
+    response: "đã mở rèm"

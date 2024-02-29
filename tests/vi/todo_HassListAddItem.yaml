@@ -9,4 +9,4 @@ tests:
       slots:
         item: "táo "
         name: "Trader Joes"
-    response: "Đã thêm táo"
+    response: "đã thêm táo"

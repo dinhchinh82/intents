@@ -11,7 +11,7 @@ tests:
       slots:
         domain: scene
         name: "chế độ tiệc"
-    response: "Đã kích hoạt"
+    response: "đã kích hoạt"
   - sentences:
       - "kích hoạt chế độ tiệc trong phòng khách"
       - "bật chế độ tiệc trong phòng khách"
@@ -28,4 +28,4 @@ tests:
         area: phòng khách
         domain: scene
         name: "chế độ tiệc"
-    response: "Đã kích hoạt"
+    response: "đã kích hoạt"

@@ -7,4 +7,4 @@ tests:
       slots:
         name: "TV"
         volume_level: 50
-    response: "Đã thiết lập âm lượng"
+    response: "đã thiết lập âm lượng"

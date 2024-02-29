@@ -6,7 +6,7 @@ tests:
       name: HassClimateSetTemperature
       slots:
         temperature: 30
-    response: "Đã đặt nhiệt độ"
+    response: "đã đặt nhiệt độ"
 
   - sentences:
       - "đặt nhiệt độ lên 30° C"
@@ -15,7 +15,7 @@ tests:
       slots:
         temperature: 30
         temperature_unit: độ Celsius
-    response: "Đã đặt nhiệt độ"
+    response: "đã đặt nhiệt độ"
 
   - sentences:
       - "đặt nhiệt độ phòng ngủ lên 50 độ Fahrenheit"
@@ -26,4 +26,4 @@ tests:
         area: phòng ngủ
         temperature: 50
         temperature_unit: độ Fahrenheit
-    response: "Đã đặt nhiệt độ"
+    response: "đã đặt nhiệt độ"

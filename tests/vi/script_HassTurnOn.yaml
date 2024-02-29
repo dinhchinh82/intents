@@ -9,4 +9,4 @@ tests:
       slots:
         domain: script
         name: "chế độ ẩn danh"
-    response: "Đã bắt đầu"
+    response: "đã bắt đầu"

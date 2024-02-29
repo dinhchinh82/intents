@@ -13,7 +13,7 @@ tests:
       slots:
         brightness: 50
         name: đèn phòng ngủ
-    response: "Đã thiết lập độ sáng"
+    response: "đã thiết lập độ sáng"
 
   - sentences:
       - "đặt độ sáng trong phòng ngủ lên 50%"
@@ -31,7 +31,7 @@ tests:
         brightness: 50
         area: phòng ngủ
         name: tất cả
-    response: "Đã thiết lập độ sáng"
+    response: "đã thiết lập độ sáng"
 
   - sentences:
       - "đặt độ sáng lên 50%"
@@ -43,7 +43,7 @@ tests:
       slots:
         brightness: 50
         area: phòng ngủ
-    response: "Đã thiết lập độ sáng"
+    response: "đã thiết lập độ sáng"
 
   - sentences:
       - "đặt độ sáng đèn phòng ngủ lên tối đa"
@@ -56,7 +56,7 @@ tests:
       slots:
         brightness: 100
         name: đèn phòng ngủ
-    response: "Đã thiết lập độ sáng"
+    response: "đã thiết lập độ sáng"
 
   - sentences:
       - "đặt độ sáng trong phòng ngủ lên tối đa"
@@ -71,7 +71,7 @@ tests:
         brightness: 100
         area: phòng ngủ
         name: tất cả
-    response: "Đã thiết lập độ sáng"
+    response: "đã thiết lập độ sáng"
 
   - sentences:
       - "đặt độ sáng đèn phòng ngủ lên thấp nhất"
@@ -82,7 +82,7 @@ tests:
       slots:
         brightness: 1
         name: đèn phòng ngủ
-    response: "Đã thiết lập độ sáng"
+    response: "đã thiết lập độ sáng"
   - sentences:
       - "đặt độ sáng trong phòng ngủ xuống thấp nhất"
       - "thay đổi độ sáng của phòng ngủ xuống thấp nhất"
@@ -94,7 +94,7 @@ tests:
         brightness: 1
         area: phòng ngủ
         name: tất cả
-    response: "Đã thiết lập độ sáng"
+    response: "đã thiết lập độ sáng"
 
   - sentences:
       - "đặt độ sáng lên tối đa"

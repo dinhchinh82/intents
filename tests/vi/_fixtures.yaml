@@ -87,17 +87,17 @@ entities:
     area: "living_room"
     state: "on"
 
-  - name: "Đèn gara"
+  - name: "đèn gara"
     id: "light.garage"
     area: "garage"
     state: "on"
 
-  - name: "Góc chơi"
+  - name: "đèn góc chơi"
     id: "light.play_corner"
     area: "living_room"
     state: "on"
 
-  - name: "Thiết bị điều chỉnh nhiệt độ"
+  - name: "thiết bị điều chỉnh nhiệt độ"
     id: "climate.thermostat"
     area: "living_room"
     state: "heat"
@@ -220,7 +220,7 @@ entities:
       out: "on"
     attributes:
       device_class: lock
-  - name: "Cảm biến rò rỉ nhà bếp"
+  - name: "cảm biến rò rỉ nhà bếp"
     id: "binary_sensor.water_sensor"
     area: "kitchen"
     state:
@@ -229,7 +229,7 @@ entities:
     attributes:
       device_class: moisture
 
-  - name: "Cảm biến chuyển động"
+  - name: "cảm biến chuyển động"
     id: "binary_sensor.garage_motion"
     area: "garage"
     state:
@@ -362,13 +362,13 @@ entities:
       device_class: apparent_power
       unit_of_measurement: "VA"
 
-  - name: "Cảm biến chất lượng không khí nhà bếp"
+  - name: "cảm biến chất lượng không khí nhà bếp"
     id: "sensor.kitchen_aqi_sensor"
     state: "50"
     attributes:
       device_class: aqi
 
-  - name: "Cảm biến không khí bên ngoài"
+  - name: "cảm biến không khí bên ngoài"
     id: "sensor.outside_pressure"
     state: "1000"
     attributes:
@@ -382,14 +382,14 @@ entities:
       device_class: battery
       unit_of_measurement: "%"
 
-  - name: "Cảm biến CO2 của máy bơm nhiệt"
+  - name: "cảm biến CO2 của máy bơm nhiệt"
     id: "sensor.heat_pump_co2"
     state: "50"
     attributes:
       device_class: carbon_dioxide
       unit_of_measurement: "ppm"
 
-  - name: "Cảm biến CO của máy bơm nhiệt"
+  - name: "cảm biến CO của máy bơm nhiệt"
     id: "sensor.heat_pump_co"
     state: "48"
     attributes:
@@ -500,48 +500,48 @@ entities:
       device_class: monetary
       unit_of_measurement: "EUR"
 
-  - name: "Cảm biến NO2 của máy bơm nhiệt"
+  - name: "cảm biến NO2 của máy bơm nhiệt"
     id: "sensor.heat_pump_no2"
     state: "50"
     attributes:
       device_class: nitrogen_dioxide
       unit_of_measurement: "µg/m³"
-  - name: "Cảm biến NO của máy bơm nhiệt"
+  - name: "cảm biến NO của máy bơm nhiệt"
     id: "sensor.heat_pump_no"
     state: "50"
     attributes:
       device_class: nitrogen_monoxide
       unit_of_measurement: "µg/m³"
 
-  - name: "Cảm biến N2O của máy bơm nhiệt"
+  - name: "cảm biến N2O của máy bơm nhiệt"
     id: "sensor.heat_pump_n2o"
     state: "50"
     attributes:
       device_class: nitrous_oxide
       unit_of_measurement: "µg/m³"
 
-  - name: "Cảm biến Ozone phòng khách"
+  - name: "cảm biến Ozone phòng khách"
     id: "sensor.living_room_ozone"
     state: "50"
     attributes:
       device_class: ozone
       unit_of_measurement: "µg/m³"
 
-  - name: "Cảm biến PM1 phòng khách"
+  - name: "cảm biến PM1 phòng khách"
     id: "sensor.living_room_pm1"
     state: "50"
     attributes:
       device_class: pm1
       unit_of_measurement: "µg/m³"
 
-  - name: "Cảm biến PM2.5 phòng khách"
+  - name: "cảm biến PM2.5 phòng khách"
     id: "sensor.living_room_pm25"
     state: "50"
     attributes:
       device_class: pm25
       unit_of_measurement: "µg/m³"
 
-  - name: "Cảm biến PM10 phòng khách"
+  - name: "cảm biến PM10 phòng khách"
     id: "sensor.living_room_pm10"
     state: "50"
     attributes:
@@ -561,14 +561,14 @@ entities:
       device_class: power
       unit_of_measurement: "W"
 
-  - name: "Cảm biến mưa ngoài trời"
+  - name: "cảm biến mưa ngoài trời"
     id: "sensor.rain_sensor_total"
     state: "29"
     attributes:
       device_class: precipitation
       unit_of_measurement: "mm"
 
-  - name: "Cảm biến mưa ngoài trời"
+  - name: "cảm biến mưa ngoài trời"
     id: "sensor.rain_sensor_intensity"
     state: "144"
     attributes:
@@ -609,7 +609,7 @@ entities:
       device_class: speed
       unit_of_measurement: "km/h"
 
-  - name: "Cảm biến SO2 của máy bơm nhiệt"
+  - name: "cảm biến SO2 của máy bơm nhiệt"
     id: "sensor.heat_pump_so2"
     state: "50"
     attributes:
@@ -623,14 +623,14 @@ entities:
       device_class: temperature
       unit_of_measurement: "°C"
 
-  - name: "Cảm biến xì hơi"
+  - name: "cảm biến xì hơi"
     id: "sensor.voc_sensor"
     state: "35"
     attributes:
       device_class: volatile_organic_compounds
       unit_of_measurement: "µg/m³"
 
-  - name: "Cảm biến xì hơi 2"
+  - name: "cảm biến xì hơi 2"
     id: "sensor.voc_sensor_parts"
     state: "35"
     attributes:

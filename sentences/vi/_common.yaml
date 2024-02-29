@@ -3,7 +3,7 @@ responses:
   errors:
     # Lỗi chung
     no_intent: "Xin lỗi, tôi không hiểu ý bạn"
-    handle_error: "Đã xảy ra lỗi không mong đợi"
+    handle_error: "đã xảy ra lỗi không mong đợi"
 
     # Lỗi khi người dùng không đăng nhập
     no_area: "Xin lỗi, tôi không biết vùng nào có tên {{ area }}"
@@ -100,7 +100,7 @@ lists:
         out: awning
       - in: rèm cửa
         out: blind
-      - in: rèm
+      - in: rèm cuốn
         out: blind
       - in: màn cửa
         out: curtain
@@ -355,11 +355,7 @@ expansion_rules:
   which: nào
 
   # Questions
-  what_is_the_class_of_name: "(
-    <class> (của|trong|từ|(được đo|hiển thị|được tính|được chỉ ra) (bởi|bằng|tại) ) <name> [trong <area>] [là|bằng] <what_is>
-    |
-    <name> (có|hiển thị|cho thấy) <class> [là|bằng] <what_is> [ở|trong|tại|của<area>]
-    )"
+  what_is_the_class_of_name: "(<name> [trong <area>] [là|bằng] <what_is> |<name> [là|bằng] <what_is> [ở|trong|tại|của<area>])"
 skip_words:
   - "làm ơn"
   - "có thể"

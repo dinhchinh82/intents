@@ -11,12 +11,12 @@ tests:
       name: HassTurnOff
       slots:
         name: đèn phòng ngủ
-    response: "Đã tắt đèn"
+    response: "đã thực hiện"
   - sentences:
       - tắt đèn góc chơi
       - đèn góc chơi tắt
     intent:
       name: HassTurnOff
       slots:
-        name: góc chơi
-    response: "Đã tắt đèn"
+        name: đèn góc chơi
+    response: "đã thực hiện"

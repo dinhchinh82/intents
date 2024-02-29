@@ -8,7 +8,7 @@ tests:
         domain: lock
       slots:
         name: Cửa trước
-    response: "Đã mở khóa"
+    response: "đã mở khóa"
 
   - sentences:
       - "mở tất cả cửa trong bếp"
@@ -21,4 +21,4 @@ tests:
         area: bếp
         domain: lock
         name: all
-    response: "Đã mở khóa"
+    response: "đã mở khóa"

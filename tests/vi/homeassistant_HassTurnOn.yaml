@@ -11,7 +11,7 @@ tests:
       name: HassTurnOn
       slots:
         name: quạt trần
-    response: "Đã bật quạt"
+    response: "đã bật quạt"
 
   - sentences:
       - "bật đèn góc chơi"
@@ -20,4 +20,4 @@ tests:
       name: HassTurnOn
       slots:
         name: Góc Chơi
-    response: "Đã bật đèn"
+    response: "đã bật đèn"
