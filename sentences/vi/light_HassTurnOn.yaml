@@ -11,10 +11,9 @@ intents:
         requires_context:
           domain: "light"
       - sentences:
-          - "bật [tất cả] đèn trong <area>"
+          - "bật [tất cả] đèn [trong] <area> [lên]"
           - "bật [tất cả] <area> đèn"
-          - "[bật] [tất cả] <area> đèn lên"
-          - "[bật] [tất cả] đèn [trong] <area> lên"
+          - "[bật] [tất cả] đèn <area> lên"
           - "kích hoạt [tất cả] đèn [trong] <area>"
           - "kích hoạt [tất cả] <area> đèn"
         slots:

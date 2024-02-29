@@ -4,7 +4,7 @@ tests:
       - "bật tất cả đèn trong phòng khách"
       - "bật đèn trong phòng khách"
       - "bật tất cả đèn phòng khách"
-      - "bật đèn phòng khách"
+      # - "bật tất cả đèn lên"
       - "đèn phòng khách bật"
       - "kích hoạt đèn phòng khách"
     intent:

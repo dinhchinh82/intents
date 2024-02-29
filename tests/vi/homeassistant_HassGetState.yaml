@@ -1,8 +1,8 @@
 language: vi
 tests:
   - sentences:
-      - "nhiệt độ bên ngoài là bao nhiêu?"
-      - "giá trị hiện tại của nhiệt độ bên ngoài là bao nhiêu?"
+      - "nhiệt độ bên ngoài là bao nhiêu"
+      - "giá trị hiện tại của nhiệt độ bên ngoài là bao nhiêu"
     intent:
       name: HassGetState
       slots:
@@ -10,7 +10,7 @@ tests:
     response: "nhiệt độ bên ngoài là 42 °F"
 
   - sentences:
-      - "đèn phòng ngủ có được bật không?"
+      - "đèn phòng ngủ có được bật không"
     intent:
       name: HassGetState
       slots:
@@ -19,7 +19,7 @@ tests:
     response: "Không, tắt"
 
   - sentences:
-      - "có công tắc nào trong bếp đang bật không?"
+      - "có công tắc nào trong bếp đang bật không"
     intent:
       name: HassGetState
       slots:
@@ -29,7 +29,7 @@ tests:
     response: "Có, Công tắc bếp"
 
   - sentences:
-      - "tất cả công tắc có đang bật không?"
+      - "tất cả công tắc có đang bật không"
     intent:
       name: HassGetState
       slots:
@@ -38,7 +38,7 @@ tests:
     response: "Không, Công tắc phòng ngủ không bật"
 
   - sentences:
-      - "tất cả đèn đã tắt chưa?"
+      - "tất cả đèn đã tắt chưa"
     intent:
       name: HassGetState
       slots:
@@ -66,8 +66,8 @@ tests:
 
   - sentences:
       - "tất cả đèn trong bếp đã bật chưa"
-      - "tất cả đèn đã bật trong bếp chưa?"
-      - "tất cả đèn trong bếp đã bật chưa?"
+      - "tất cả đèn đã bật trong bếp chưa"
+      - "tất cả đèn trong bếp đã bật chưa"
     intent:
       name: HassGetState
       slots:

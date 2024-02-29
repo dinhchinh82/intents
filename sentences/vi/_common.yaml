@@ -156,7 +156,7 @@ lists:
 
   bs_connectivity_states:
     values:
-      - in: "đã kết nối"
+      - in: "kết nối"
         out: "on"
       - in: "mất kết nối"
         out: "off"
@@ -352,6 +352,7 @@ expansion_rules:
   in: "(trong|ở|tại|của)"
   position: "{position}[[ ]%| phần trăm]"
   volume: "{volume:volume_level}[[ ]%| phần trăm]"
+  which: nào
 
   # Questions
   what_is_the_class_of_name: "(

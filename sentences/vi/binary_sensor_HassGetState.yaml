@@ -130,7 +130,7 @@ intents:
           device_class: carbon_monoxide
       # Lạnh
       - sentences:
-          - " [liệu [rằng]|phải chăng|có thể] <name> ([có] [đang]|[có][đang]) {bs_cold_states:state} [không] [trong|ở|tại <area>] "
+          - " [liệu [rằng]|phải chăng|có thể] <name> ([có] [đang]|[có][đang]) {bs_cold_states:state} [không] [trong|ở|tại <area>]"
         response: one_yesno
         requires_context:
           domain: binary_sensor
@@ -140,7 +140,7 @@ intents:
           device_class: cold
 
       - sentences:
-          - "(is|are) có bất cứ(vật|cảm biến) nào lạnh [trong <area>]"
+          - "có (vật|cảm biến) nào [đang] lạnh [trong <area>] [không]"
         response: any
         slots:
           domain: binary_sensor
@@ -148,7 +148,7 @@ intents:
           state: "on"
 
       - sentences:
-          - "(which|what) (vật|cảm biến) (is|are) lạnh [trong <area>]"
+          - "(vật|cảm biến) nào [đang] lạnh [trong <area>]"
         response: which
         slots:
           domain: binary_sensor
@@ -156,7 +156,7 @@ intents:
           state: "on"
 
       - sentences:
-          - "có bao nhiêu (vật|cảm biến) (is|are) lạnh [trong <area>]"
+          - "có bao nhiêu (vật|cảm biến) [đang] lạnh [trong <area>]"
         response: how_many
         slots:
           domain: binary_sensor
@@ -165,7 +165,7 @@ intents:
 
       # Kết nối
       - sentences:
-          - "(is|are) <name> {bs_connectivity_states:state} [trong <area>]"
+          - "<name> [có] {bs_connectivity_states:state} [trong <area>] [không]"
         response: one_yesno
         requires_context:
           domain: binary_sensor
@@ -175,14 +175,14 @@ intents:
           device_class: connectivity
 
       - sentences:
-          - "(is|are) có thiết bị nào {bs_connectivity_states:state} [trong <area>]"
+          - "có thiết bị nào [đang] {bs_connectivity_states:state} [trong <area>] [không]"
         response: any
         slots:
           domain: binary_sensor
           device_class: connectivity
 
       - sentences:
-          - "are all [các] thiết bị {bs_connectivity_states:state} [trong <area>]"
+          - "[tất cả] [các] thiết bị [trong <area>] [có đang] {bs_connectivity_states:state} [không]"
         response: all
         slots:
           domain: binary_sensor

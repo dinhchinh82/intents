@@ -1,18 +1,23 @@
 language: vi
 tests:
   - sentences:
-      - "nhiệt độ bao nhiêu?"
-      - "nhiệt độ là bao nhiêu?"
+      - "nhiệt độ bao nhiêu"
+      - "nhiệt độ là bao nhiêu"
       - "hiện tại bao nhiêu độ?"
     intent:
       name: HassClimateGetTemperature
     response: "68 độ"
 
   - sentences:
-      - "nhiệt độ trong phòng khách là bao nhiêu?"
+      - "nhiệt độ trong phòng khách là bao nhiêu"
       - "trong phòng khách đang nóng đến mức nào?"
-      - "nhiệt độ của phòng khách là bao nhiêu?"
+      - "nhiệt độ của phòng khách là bao nhiêu"
       - "nhiệt độ trong phòng khách?"
+      - "hiện tại nhiệt độ trong phòng khách bao nhiêu"
+      - "hiện tại ở phòng khách đang nóng không"
+      - "bây giờ ở phòng khách đang nóng không"
+      - "bây giờ ở phòng khách đang nóng đến mức nào"
+      - "ở phòng khách hiện tại nhiệt độ đang là bao nhiêu"
     intent:
       name: HassClimateGetTemperature
       slots:
@@ -20,7 +25,7 @@ tests:
     response: "68 độ"
 
   - sentences:
-      - "nhiệt độ của máy điều hòa văn phònglà bao nhiêu?"
+      - "nhiệt độ của máy điều hòa văn phòng là bao nhiêu"
       - "máy điều hòa văn phòng đang hiển thị bao nhiêu độ?"
     intent:
       name: HassClimateGetTemperature
@@ -28,7 +33,7 @@ tests:
         name: "máy điều hòa văn phòng"
     response: "1 độ"
   - sentences:
-      - "văn phòng đang nhiệt độ bao nhiêu?"
+      - "văn phòng đang nhiệt độ bao nhiêu"
     intent:
       name: HassClimateGetTemperature
       slots:

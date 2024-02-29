@@ -1,7 +1,7 @@
 language: vi
 tests:
   - sentences:
-      - "rèm cửa bên trái đóng chưa?"
+      - "rèm cửa bên trái đóng chưa"
     intent:
       name: HassGetState
       slots:
@@ -11,7 +11,7 @@ tests:
     response: "Không, đang mở"
 
   - sentences:
-      - "có rèm nào đang được mở trong phòng khách không?"
+      - "có rèm nào đang được mở trong phòng khách không"
     intent:
       name: HassGetState
       slots:
@@ -22,7 +22,7 @@ tests:
     response: "Có, rèm cửa bên trái"
 
   - sentences:
-      - "tất cả các rèm trong phòng khách đều đã mở chưa?"
+      - "tất cả các rèm trong phòng khách đều đã mở chưa"
     intent:
       name: HassGetState
       slots:

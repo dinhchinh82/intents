@@ -2,7 +2,7 @@ language: vi
 tests:
   # Pin
   - sentences:
-      - "pin điện thoại có yếu không?"
+      - "pin điện thoại có yếu không"
     intent:
       name: HassGetState
       slots:
@@ -13,7 +13,7 @@ tests:
     response: "Không, bình thường"
 
   - sentences:
-      - "có pin nào yếu không?"
+      - "có pin nào yếu không"
     intent:
       name: HassGetState
       slots:
@@ -23,7 +23,7 @@ tests:
     response: "Không"
 
   - sentences:
-      - "tất cả pin có yếu không?"
+      - "tất cả pin có yếu không"
     intent:
       name: HassGetState
       slots:
@@ -54,7 +54,7 @@ tests:
 
   # Pin đang sạc
   - sentences:
-      - "điện thoại có đang sạc không?"
+      - "điện thoại có đang sạc không"
     intent:
       name: HassGetState
       slots:
@@ -65,7 +65,7 @@ tests:
     response: "Có"
 
   - sentences:
-      - "có pin nào đang sạc không?"
+      - "có pin nào đang sạc không"
     intent:
       name: HassGetState
       slots:
@@ -75,7 +75,7 @@ tests:
     response: "Có, điện thoại"
 
   - sentences:
-      - "tất cả pin có đang sạc không?"
+      - "tất cả pin có đang sạc không"
     intent:
       name: HassGetState
       slots:
@@ -106,7 +106,7 @@ tests:
 
   # Monoxide carbon
   - sentences:
-      - "CO2 có được phát hiện không?"
+      - "CO2 có được phát hiện không"
     intent:
       name: HassGetState
       slots:
@@ -117,7 +117,7 @@ tests:
     response: "Không, trong lành"
 
   - sentences:
-      - "có cảm biến khí CO nào được bật không?"
+      - "có cảm biến khí CO nào được bật không"
     intent:
       name: HassGetState
       slots:
@@ -127,8 +127,8 @@ tests:
     response: "Không"
 
   - sentences:
-      - "có khí CO nào trong bếp không?"
-      - "có phát hiện khí CO nào trong bếp không?"
+      - "có khí CO nào trong bếp không"
+      - "có phát hiện khí CO nào trong bếp không"
     intent:
       name: HassGetState
       slots:
@@ -139,7 +139,7 @@ tests:
     response: "Không"
 
   - sentences:
-      - "tất cả cảm biến khí CO có được bật không?"
+      - "tất cả cảm biến khí CO có được bật không"
     intent:
       name: HassGetState
       slots:
@@ -170,7 +170,7 @@ tests:
 
   # Lạnh
   - sentences:
-      - "ống nước có lạnh không?"
+      - "ống nước có lạnh không"
     intent:
       name: HassGetState
       slots:
@@ -181,7 +181,7 @@ tests:
     response: "Không, bình thường"
 
   - sentences:
-      - "có vật nào đang lạnh không?"
+      - "có vật nào lạnh không"
     intent:
       name: HassGetState
       slots:
@@ -191,7 +191,7 @@ tests:
     response: "Không"
 
   - sentences:
-      - "vật nào đang lạnh?"
+      - "vật nào đang lạnh"
     intent:
       name: HassGetState
       slots:
@@ -201,7 +201,7 @@ tests:
     response: "Không có"
 
   - sentences:
-      - "có bao nhiêu vật đang lạnh?"
+      - "có bao nhiêu vật đang lạnh"
     intent:
       name: HassGetState
       slots:
@@ -212,18 +212,18 @@ tests:
 
   # Kết nối
   - sentences:
-      - "điện thoại có kết nối không?"
+      - "điện thoại có kết nối không"
     intent:
       name: HassGetState
       slots:
         domain: "binary_sensor"
         device_class: "connectivity"
-        name: "Phone"
+        name: "điện thoại"
         state: "on"
     response: "Có"
 
   - sentences:
-      - "có thiết bị nào đang kết nối không?"
+      - "có thiết bị nào đang kết nối không"
     intent:
       name: HassGetState
       slots:
@@ -233,7 +233,7 @@ tests:
     response: "Có, Phone"
 
   - sentences:
-      - "tất cả thiết bị có đang kết nối không?"
+      - "tất cả thiết bị có đang kết nối không"
     intent:
       name: HassGetState
       slots:
@@ -264,7 +264,7 @@ tests:
 
   # Cửa
   - sentences:
-      - "cửa cho thú cưng có mở không?"
+      - "cửa cho thú cưng có mở không"
     intent:
       name: HassGetState
       slots:
@@ -276,7 +276,7 @@ tests:
 
   # Cửa garage
   - sentences:
-      - "cửa garage phụ có được đóng không?"
+      - "cửa garage phụ có được đóng không"
     intent:
       name: HassGetState
       slots:
@@ -288,7 +288,7 @@ tests:
 
   # Khí gas
   - sentences:
-      - "khí gas có được phát hiện không?"
+      - "khí gas có được phát hiện không"
     intent:
       name: HassGetState
       slots:
@@ -299,7 +299,7 @@ tests:
     response: "Không, trong lành"
 
   - sentences:
-      - "có cảm biến khí gas nào đang hoạt động không?"
+      - "có cảm biến khí gas nào đang hoạt động không"
     intent:
       name: HassGetState
       slots:
@@ -309,8 +309,8 @@ tests:
     response: "Không"
 
   - sentences:
-      - "có khí gas nào trong bếp không?"
-      - "có phát hiện khí gas nào trong bếp không?"
+      - "có khí gas nào trong bếp không"
+      - "có phát hiện khí gas nào trong bếp không"
     intent:
       name: HassGetState
       slots:
@@ -321,7 +321,7 @@ tests:
     response: "Không"
 
   - sentences:
-      - "tất cả cảm biến khí gas có đang hoạt động không?"
+      - "tất cả cảm biến khí gas có đang hoạt động không"
     intent:
       name: HassGetState
       slots:
@@ -352,7 +352,7 @@ tests:
 
   # Nhiệt
   - sentences:
-      - "máy tính có nóng không?"
+      - "máy tính có nóng không"
     intent:
       name: HassGetState
       slots:
@@ -363,7 +363,7 @@ tests:
     response: "Có"
 
   - sentences:
-      - "có vật nào đang nóng không?"
+      - "có vật nào đang nóng không"
     intent:
       name: HassGetState
       slots:
@@ -394,7 +394,7 @@ tests:
 
   # Ánh sáng
   - sentences:
-      - "có phát hiện ánh sáng không?"
+      - "có phát hiện ánh sáng không"
     intent:
       name: HassGetState
       slots:
@@ -405,7 +405,7 @@ tests:
     response: "Không, không có ánh sáng"
 
   - sentences:
-      - "có phát hiện ánh sáng nào không?"
+      - "có phát hiện ánh sáng nào không"
     intent:
       name: HassGetState
       slots:
@@ -414,7 +414,7 @@ tests:
         state: "on"
     response: "Không"
   - sentences:
-      - "tất cả các đèn đã được phát hiện chưa?"
+      - "tất cả các đèn đã được phát hiện chưa"
     intent:
       name: HassGetState
       slots:
@@ -445,7 +445,7 @@ tests:
 
   # Khóa
   - sentences:
-      - "cửa cho thú cưng có bị khóa không?"
+      - "cửa cho thú cưng có bị khóa không"
     intent:
       name: HassGetState
       slots:
@@ -457,7 +457,7 @@ tests:
 
   # Độ ẩm
   - sentences:
-      - "cảm biến rò rỉ trong nhà bếp có ẩm không?"
+      - "cảm biến rò rỉ trong nhà bếp có ẩm không"
     intent:
       name: HassGetState
       slots:
@@ -468,10 +468,10 @@ tests:
     response: "Không, khô"
 
   - sentences:
-      - "có cảm biến nước nào ẩm không?"
-      - "sàn có ẩm không?"
+      - "có cảm biến nước nào ẩm không"
+      - "sàn có ẩm không"
       - "cảm biến nước có ẩm không"
-      - "có rò rỉ nước nào không?"
+      - "có rò rỉ nước nào không"
     intent:
       name: HassGetState
       slots:
@@ -481,7 +481,7 @@ tests:
     response: "Không"
 
   - sentences:
-      - "nhà bếp có bị tràn nước không?"
+      - "nhà bếp có bị tràn nước không"
     intent:
       name: HassGetState
       slots:
@@ -492,7 +492,7 @@ tests:
     response: "Không"
 
   - sentences:
-      - "tất cả cảm biến nước đều ẩm không?"
+      - "tất cả cảm biến nước đều ẩm không"
     intent:
       name: HassGetState
       slots:
@@ -523,7 +523,7 @@ tests:
 
   # Chuyển động
   - sentences:
-      - "cảm biến chuyển động trong nhà để xe có đang mở không?"
+      - "cảm biến chuyển động trong nhà để xe có đang mở không"
     intent:
       name: HassGetState
       slots:
@@ -535,9 +535,9 @@ tests:
     response: "Có"
 
   - sentences:
-      - "có cảm biến chuyển động nào được kích hoạt không?"
-      - "có chuyển động nào được phát hiện không?"
-      - "có chuyển động nào không?"
+      - "có cảm biến chuyển động nào được kích hoạt không"
+      - "có chuyển động nào được phát hiện không"
+      - "có chuyển động nào không"
     intent:
       name: HassGetState
       slots:
@@ -547,7 +547,7 @@ tests:
     response: "Có, cảm biến chuyển động"
 
   - sentences:
-      - "tất cả cảm biến chuyển động đều được kích hoạt không?"
+      - "tất cả cảm biến chuyển động đều được kích hoạt không"
     intent:
       name: HassGetState
       slots:
@@ -578,7 +578,7 @@ tests:
 
   # Có người
   - sentences:
-      - "có phát hiện người trong nhà bếp không?"
+      - "có phát hiện người trong nhà bếp không"
     intent:
       name: HassGetState
       slots:
@@ -590,8 +590,8 @@ tests:
     response: "Có"
 
   - sentences:
-      - "có cảm biến phát hiện người nào được kích hoạt không?"
-      - "có phát hiện người nào không?"
+      - "có cảm biến phát hiện người nào được kích hoạt không"
+      - "có phát hiện người nào không"
     intent:
       name: HassGetState
       slots:
@@ -601,7 +601,7 @@ tests:
     response: "Có, Phát hiện người"
 
   - sentences:
-      - "nhà bếp có người không?"
+      - "nhà bếp có người không"
     intent:
       name: HassGetState
       slots:
@@ -612,7 +612,7 @@ tests:
     response: "Có, Phát hiện người"
 
   - sentences:
-      - "tất cả cảm biến phát hiện người đều được kích hoạt không?"
+      - "tất cả cảm biến phát hiện người đều được kích hoạt không"
     intent:
       name: HassGetState
       slots:
@@ -643,7 +643,7 @@ tests:
 
   # Mở
   - sentences:
-      - "cửa nhà để xe có mở không?"
+      - "cửa nhà để xe có mở không"
     intent:
       name: HassGetState
       slots:
@@ -654,7 +654,7 @@ tests:
     response: "Không, đóng"
 
   - sentences:
-      - "có lối mở nào đang mở không?"
+      - "có lối mở nào đang mở không"
     intent:
       name: HassGetState
       slots:
@@ -664,7 +664,7 @@ tests:
     response: "Không"
 
   - sentences:
-      - "tất cả lối mở đều mở không?"
+      - "tất cả lối mở đều mở không"
     intent:
       name: HassGetState
       slots:
@@ -694,7 +694,7 @@ tests:
     response: "0"
   # Cắm
   - sentences:
-      - "điện thoại đã tháo chưa?"
+      - "điện thoại đã tháo chưa"
     intent:
       name: HassGetState
       slots:
@@ -705,7 +705,7 @@ tests:
     response: "Không, đã cắm"
 
   - sentences:
-      - "có thiết bị nào đang cắm không?"
+      - "có thiết bị nào đang cắm không"
     intent:
       name: HassGetState
       slots:
@@ -715,7 +715,7 @@ tests:
     response: "Có, Phone"
 
   - sentences:
-      - "tất cả thiết bị đã cắm chưa?"
+      - "tất cả thiết bị đã cắm chưa"
     intent:
       name: HassGetState
       slots:
@@ -746,7 +746,7 @@ tests:
 
   # Điện
   - sentences:
-      - "điện chính đã được kiểm tra chưa?"
+      - "điện chính đã được kiểm tra chưa"
     intent:
       name: HassGetState
       slots:
@@ -767,7 +767,7 @@ tests:
     response: "Có, Mains"
 
   - sentences:
-      - "tất cả thiết bị đã được cung cấp điện chưa?"
+      - "tất cả thiết bị đã được cung cấp điện chưa"
     intent:
       name: HassGetState
       slots:
@@ -798,7 +798,7 @@ tests:
 
   # Hiện diện
   - sentences:
-      - "điện thoại có ở nhà không?"
+      - "điện thoại có ở nhà không"
     intent:
       name: HassGetState
       slots:
@@ -809,7 +809,7 @@ tests:
     response: "Không, không ở nhà"
 
   - sentences:
-      - "có thiết bị nào ở nhà không?"
+      - "có thiết bị nào ở nhà không"
     intent:
       name: HassGetState
       slots:
@@ -819,7 +819,7 @@ tests:
     response: "Không"
 
   - sentences:
-      - "tất cả thiết bị có ở nhà không?"
+      - "tất cả thiết bị có ở nhà không"
     intent:
       name: HassGetState
       slots:
@@ -850,7 +850,7 @@ tests:
 
   # Vấn đề
   - sentences:
-      - "có vấn đề gì với máy cho ăn thú cưng không?"
+      - "có vấn đề gì với máy cho ăn thú cưng không"
     intent:
       name: HassGetState
       slots:
@@ -862,7 +862,7 @@ tests:
 
   # Hoạt động
   - sentences:
-      - "máy giặt đang hoạt động không?"
+      - "máy giặt đang hoạt động không"
     intent:
       name: HassGetState
       slots:
@@ -883,7 +883,7 @@ tests:
     response: "Có, Washer"
 
   - sentences:
-      - "tất cả thiết bị đang hoạt động không?"
+      - "tất cả thiết bị đang hoạt động không"
     intent:
       name: HassGetState
       slots:
@@ -914,7 +914,7 @@ tests:
 
   # An toàn
   - sentences:
-      - "đường có an toàn không?"
+      - "đường có an toàn không"
     intent:
       name: HassGetState
       slots:
@@ -926,7 +926,7 @@ tests:
 
   # Khói
   - sentences:
-      - "có phát hiện khói trong nhà bếp không?"
+      - "có phát hiện khói trong nhà bếp không"
     intent:
       name: HassGetState
       slots:
@@ -937,7 +937,7 @@ tests:
     response: "Không, tinh khiết"
 
   - sentences:
-      - "có cảm biến khói nào được kích hoạt không?"
+      - "có cảm biến khói nào được kích hoạt không"
     intent:
       name: HassGetState
       slots:
@@ -947,7 +947,7 @@ tests:
     response: "Không"
   # Khói
   - sentences:
-      - "có khói trong bếp không?"
+      - "có khói trong bếp không"
     intent:
       name: HassGetState
       slots:
@@ -958,7 +958,7 @@ tests:
     response: "Không"
 
   - sentences:
-      - "tất cả cảm biến khói đều đã kích hoạt chưa?"
+      - "tất cả cảm biến khói đều đã kích hoạt chưa"
     intent:
       name: HassGetState
       slots:
@@ -989,7 +989,7 @@ tests:
 
   # Âm thanh
   - sentences:
-      - "có phát hiện còi báo động không?"
+      - "có phát hiện còi báo động không"
     intent:
       name: HassGetState
       slots:
@@ -1010,7 +1010,7 @@ tests:
     response: "Có, Siren"
 
   - sentences:
-      - "có tiếng ồn trong nhà để xe không?"
+      - "có tiếng ồn trong nhà để xe không"
     intent:
       name: HassGetState
       slots:
@@ -1021,7 +1021,7 @@ tests:
     response: "Có, Siren"
 
   - sentences:
-      - "tất cả cảm biến âm thanh đã kích hoạt chưa?"
+      - "tất cả cảm biến âm thanh đã kích hoạt chưa"
     intent:
       name: HassGetState
       slots:
@@ -1052,7 +1052,7 @@ tests:
 
   # Sự can thiệp
   - sentences:
-      - "ổ bánh quy có bị can thiệp không?"
+      - "ổ bánh quy có bị can thiệp không"
     intent:
       name: HassGetState
       slots:
@@ -1064,7 +1064,7 @@ tests:
 
   # Cập nhật
   - sentences:
-      - "điện thoại đã cập nhật phiên bản mới nhất chưa?"
+      - "điện thoại đã cập nhật phiên bản mới nhất chưa"
     intent:
       name: HassGetState
       slots:
@@ -1075,7 +1075,7 @@ tests:
     response: "Không, có cập nhật mới"
 
   - sentences:
-      - "có cập nhật mới không?"
+      - "có cập nhật mới không"
     intent:
       name: HassGetState
       slots:
@@ -1106,7 +1106,7 @@ tests:
 
   # Rung
   - sentences:
-      - "điện thoại có đang rung không?"
+      - "điện thoại có đang rung không"
     intent:
       name: HassGetState
       slots:
@@ -1117,7 +1117,7 @@ tests:
     response: "Không, không rung"
 
   - sentences:
-      - "có cái gì đang rung không?"
+      - "có cái gì đang rung không"
     intent:
       name: HassGetState
       context:

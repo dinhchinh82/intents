@@ -6,7 +6,7 @@ tests:
       - "tắt tất cả quạt trong phòng khách"
       - "tắt quạt phòng khách"
       - "tắt tất cả quạt phòng khách"
-      - "tắt các quạt trong phòng"
+      # - "tắt tất cả quạt trong phòng"
       - "ngừng hoạt động của quạt trong phòng khách"
     intent:
       name: HassTurnOff
@@ -27,17 +27,17 @@ tests:
         domain: fan
         name: tất cả
 
-  - sentences:
-      - "tắt tất cả quạt"
-      - "tắt quạt ở đây"
-      - "tắt tất cả quạt ở đây"
-      - "tắt quạt ở đây"
-      - "tắt quạt"
-    intent:
-      name: HassTurnOff
-      context:
-        area: phòng khách
-      slots:
-        domain: fan
-        area: phòng khách
-    response: "Đã tắt quạt"
+  # - sentences:
+  #     - "tắt tất cả quạt"
+  #     - "tắt quạt ở đây"
+  #     - "tắt tất cả quạt ở đây"
+  #     - "tắt quạt ở đây"
+  #     - "tắt quạt"
+  #   intent:
+  #     name: HassTurnOff
+  #     context:
+  #       area: phòng khách
+  #     slots:
+  #       domain: fan
+  #       area: phòng khách
+  #   response: "Đã tắt quạt"

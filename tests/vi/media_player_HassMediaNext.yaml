@@ -1,7 +1,8 @@
 language: vi
 tests:
   - sentences:
-      - "mục tiếp theo trên TV"
+      - "mở tiếp bài hát trên TV"
+      - "bài tiếp theo trên TV"
     intent:
       name: HassMediaNext
       slots:

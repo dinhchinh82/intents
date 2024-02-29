@@ -16,3 +16,11 @@ tests:
         name: "van chính"
         position: 100
     response: "Đã thiết lập vị trí"
+  - sentences:
+      - "đặt vị trí của van chính ở mức 100"
+    intent:
+      name: HassSetPosition
+      slots:
+        name: "van chính"
+        position: 100
+    response: "Đã thiết lập vị trí"

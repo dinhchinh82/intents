@@ -20,7 +20,7 @@ tests:
     response: "Có, Cửa sau"
 
   - sentences:
-      - "có cửa chưa khóa nào không?"
+      - "có cửa chưa khóa nào không"
     intent:
       name: HassGetState
       slots:
@@ -29,7 +29,7 @@ tests:
     response: "Có, Cửa sau"
 
   - sentences:
-      - "tất cả cửa khóa chưa?"
+      - "tất cả cửa khóa chưa"
     intent:
       name: HassGetState
       slots:
