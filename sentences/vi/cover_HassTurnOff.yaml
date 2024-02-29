@@ -16,7 +16,7 @@ intents:
         response: cover_device_class
 
       - sentences:
-          - "<đóng> {cover_classes:device_class} [tại|trong|của|ở <area>]"
+          - "<đóng> {cover_classes:device_class} [tại|trong|của|ở] <area>"
           - "<đóng> {cover_classes:device_class} (tại|trong|của|ở) <area>"
         slots:
           domain: cover
@@ -28,6 +28,7 @@ intents:
           in_here: "[trong] đây"
         slots:
           domain: cover
+          device_class: curtain
         response: cover_device_class
         requires_context:
           area:

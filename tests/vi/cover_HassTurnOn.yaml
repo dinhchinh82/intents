@@ -63,7 +63,7 @@ tests:
     response: "đã mở rèm cuốn"
 
   - sentences:
-      - "mở rèm trong phòng này"
+      - "mở rèm kéo trong phòng này"
     intent:
       name: HassTurnOn
       context:
@@ -72,4 +72,4 @@ tests:
         domain: cover
         area: phòng khách
         device_class: shade
-    response: "đã mở rèm"
+    response: "đã mở rèm kéo"

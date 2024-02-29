@@ -111,16 +111,16 @@ entities:
     attributes:
       current_temperature: 1
 
-  - name: "Cửa trước"
+  - name: "cửa trước"
     id: "lock.front_door"
     area: "entrance"
     state: "locked"
 
-  - name: "Cửa sau"
+  - name: "cửa sau"
     id: "lock.back_door"
     state: "unlocked"
 
-  - name: "Cửa bên"
+  - name: "cửa bên"
     id: "lock.side_door"
     state: "locked"
 
@@ -172,7 +172,7 @@ entities:
     attributes:
       device_class: connectivity
 
-  - name: "Cửa cho thú cưng"
+  - name: "cửa cho thú cưng"
     id: "binary_sensor.pet_door"
     state:
       in: "đóng"
@@ -180,7 +180,7 @@ entities:
     attributes:
       device_class: door
 
-  - name: "Cửa gara phụ"
+  - name: "cửa gara phụ"
     id: "binary_sensor.garage_door"
     state:
       in: "đóng"
@@ -213,7 +213,7 @@ entities:
     attributes:
       device_class: light
 
-  - name: "Cửa cho thú cưng"
+  - name: "cửa cho thú cưng"
     id: "binary_sensor.pet_door_lock"
     state:
       in: "mở khóa"
@@ -247,7 +247,7 @@ entities:
     attributes:
       device_class: occupancy
 
-  - name: "Cửa cứu trợ"
+  - name: "cửa cứu trợ"
     id: "binary_sensor.shed_door_opening"
     state:
       in: "đóng"

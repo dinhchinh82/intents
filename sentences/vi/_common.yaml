@@ -58,10 +58,10 @@ lists:
       to: 100
   temperature_unit:
     values:
-      - "celsius"
+      # - "celsius"
       - in: "độ C"
         out: "celsius"
-      - "fahrenheit"
+      # - "fahrenheit"
       - in: "độ F"
         out: "fahrenheit"
   brightness_level:
@@ -102,7 +102,7 @@ lists:
         out: blind
       - in: rèm cuốn
         out: blind
-      - in: màn cửa
+      - in: rèm
         out: curtain
       - in: cửa
         out: door
@@ -110,7 +110,7 @@ lists:
         out: garage
       - in: cổng
         out: gate
-      - in: rèm
+      - in: rèm kéo
         out: shade
       - in: cửa chớp
         out: shutter
@@ -342,7 +342,7 @@ expansion_rules:
   light: "[cái] (đèn|ánh sáng)"
   turn: "(kích hoạt|bật|chuyển|đổi)"
   temp: "(nhiệt|nhiệt độ)"
-  temperature: "{temperature}[ ][°|độ][ ][{temperature_unit}]"
+  temperature: "{temperature}[ ][°|độ|độ C][ ][{temperature_unit}]"
   mở: "(mở|nâng lên)"
   open: "(mở|nâng lên)"
   đóng: "(đóng|đậy lại|hạ xuống)"
