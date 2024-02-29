@@ -9,7 +9,7 @@ tests:
         domain: sensor
         device_class: apparent_power
         name: "công suất biểu kiến của thiết bị"
-    response: "Công suất hiển thị của thiết bị là 2 VA"
+    response: "Công suất biểu kiến của thiết bị đang ở mức 2 VA"
 
   # AQI
   - sentences:

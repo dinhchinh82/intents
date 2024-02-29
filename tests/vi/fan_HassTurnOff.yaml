@@ -13,7 +13,7 @@ tests:
       slots:
         area: phòng khách
         domain: fan
-        name: tất cả
+        name: all
     response: "Đã tắt quạt"
 
   - sentences:

@@ -12,7 +12,6 @@ tests:
       slots:
         name: đèn phòng ngủ
     response: "Đã tắt đèn"
-
   - sentences:
       - tắt đèn góc chơi
       - đèn góc chơi tắt
