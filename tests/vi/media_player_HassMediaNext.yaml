@@ -6,4 +6,4 @@ tests:
       name: HassMediaNext
       slots:
         name: "TV"
-    response: "Đang chơi bài tiếp theo"
+    response: "Đang chuyển sang mục tiếp theo"
