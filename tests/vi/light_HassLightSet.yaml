@@ -81,7 +81,7 @@ tests:
       name: HassLightSet
       slots:
         brightness: 1
-        name: đèn phòng ngủ
+        name: "đèn phòng ngủ"
     response: "đã thiết lập độ sáng"
   - sentences:
       - "đặt độ sáng trong phòng ngủ xuống thấp nhất"
@@ -99,7 +99,7 @@ tests:
   - sentences:
       - "đặt độ sáng lên tối đa"
       - "thay đổi độ sáng ở đây lên mức cao nhất"
-      - "quay độ sáng lên tối đa ở đây"
+      - "thay đổi độ sáng lên tối đa ở đây"
     intent:
       name: HassLightSet
       context:
@@ -107,7 +107,7 @@ tests:
       slots:
         brightness: 100
         area: phòng ngủ
-    response: "Độ sáng đã được thiết lập"
+    response: "đã thiết lập độ sáng"
 
   # màu sắc
   - sentences:
@@ -123,7 +123,7 @@ tests:
       slots:
         color: đỏ
         name: đèn phòng ngủ
-    response: "Màu sắc đã được thiết lập"
+    response: "đã thiết lập màu sắc"
 
   - sentences:
       - "đặt màu sắc phòng ngủ lên đỏ"
@@ -137,7 +137,7 @@ tests:
         color: đỏ
         area: phòng ngủ
         name: tất cả
-    response: "Màu sắc đã được thiết lập"
+    response: "đã thiết lập màu sắc"
 
   - sentences:
       - "tạo màu đỏ cho đèn"
@@ -150,4 +150,4 @@ tests:
       slots:
         color: đỏ
         area: phòng ngủ
-    response: "Màu sắc đã được thiết lập"
+    response: "đã thiết lập màu sắc"

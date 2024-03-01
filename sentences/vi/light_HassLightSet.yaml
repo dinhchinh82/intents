@@ -52,8 +52,8 @@ intents:
 
       # Độ sáng tối đa/tối thiểu
       - sentences:
-          - " [<numeric_value_set>] (mức|độ|mức độ) sáng [của] <name> [đến|lên|tới|ở|tại] {brightness_level:brightness} "
-          - " [<numeric_value_set>] <name>  [đến|lên|tới|ở|tại] [(mức|độ|mức độ)] [sáng] {brightness_level:brightness} "
+          - " [<numeric_value_set>] (mức|độ|mức độ) sáng [của] <name> [đến|lên|tới|ở|tại|lên mức|xuống] {brightness_level:brightness} "
+          - " [<numeric_value_set>] <name> [đến|lên|tới|ở|tại|xuống] [(mức|độ|mức độ)] [sáng] {brightness_level:brightness} "
 
           # - " [<numeric_value_set>] [độ sáng] [của] <name> đến [mức] {brightness_level:brightness}"
           # - " [<numeric_value_set>] <name> [đến] [mức] {brightness_level:brightness} độ sáng"
@@ -62,17 +62,17 @@ intents:
         response: brightness
 
       - sentences:
-          - "[<numeric_value_set>] [độ sáng] trong <area> đến [mức] {brightness_level:brightness}"
-          - "[<numeric_value_set>] [độ sáng] của <area> đến [mức] {brightness_level:brightness}"
-          - "[<numeric_value_set>] <area> độ sáng đến [mức] {brightness_level:brightness}"
-          - "[<numeric_value_set>] <area> [đến] [mức] {brightness_level:brightness} độ sáng"
+          - "[<numeric_value_set>] [độ sáng] [của|trong] <area> (lên|đến|xuống) [mức] {brightness_level:brightness}"
+          # - "[<numeric_value_set>] [độ sáng] của <area> đến [mức] {brightness_level:brightness}"
+          - "[<numeric_value_set>] <area> độ sáng đến [mức|độ] {brightness_level:brightness}"
+          - "[<numeric_value_set>] <area> [đến|lên|xuống] [mức|độ] độ sáng {brightness_level:brightness} "
         slots:
           name: "tất cả"
         response: brightness
 
       - sentences:
-          - "[<numeric_value_set>] [độ sáng] đến [mức] {brightness_level:brightness}"
-          - "[<numeric_value_set>] [độ sáng] ([ở đây];đến [mức] {brightness_level:brightness})"
+          - "[<numeric_value_set>] [độ sáng] [lên|đến] [mức] {brightness_level:brightness} [<in_here>]"
+          - "[<numeric_value_set>] [độ sáng] ([ở đây] [lên|đến] [mức] {brightness_level:brightness})"
         expansion_rules:
           in_here: "[ ở] đây"
         response: brightness
@@ -82,8 +82,8 @@ intents:
 
       # Màu sắc
       - sentences:
-          - "[<set>] <name> [màu] [đến] {color}"
-          - "[<set>] [màu sắc của] <name> đến {color}"
+          - "[<set>] <name> [màu|màu sắc] [đến] {color}"
+          - "[<set>] [màu sắc|màu] [của] <name> [sang|lên|đến] {color}"
         requires_context:
           domain: light
         response: color
@@ -95,8 +95,8 @@ intents:
         response: brightness
 
       - sentences:
-          - "[<set>] [màu của] [tất cả] <light> [đến] {color}"
-          - "[<set>] [màu của] [tất cả] <light> ([ở đây];[đến] {color})"
+          - "[<set>] [màu của|màu] [tất cả] <light> [đến|sang] {color}"
+          - "[<set>] [màu của|màu] [tất cả] <light> ([<in_here>] [sang|lên|đến] {color})"
         expansion_rules:
           in_here: "[ ở] đây"
         response: color
