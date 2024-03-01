@@ -3,7 +3,9 @@ tests:
   - sentences:
       - "bật tất cả đèn trong phòng khách"
       - "bật đèn trong phòng khách"
+      - "bật đèn trong phòng khách lên"
       - "bật tất cả đèn phòng khách"
+      - "bật tất cả đèn trong phòng khách lên"
       # - "bật tất cả đèn lên"
       # - "đèn phòng khách bật"
       # - "kích hoạt đèn phòng khách"
@@ -29,6 +31,8 @@ tests:
   - sentences:
       - "bật tất cả đèn"
       - "bật tất cả đèn ở đây"
+      - "bật tất cả đèn lên"
+      - "bật tất cả đèn ở đây lên"
     intent:
       name: HassTurnOn
       context:

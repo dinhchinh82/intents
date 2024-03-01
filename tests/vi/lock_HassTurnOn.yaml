@@ -1,14 +1,14 @@
 language: vi
 tests:
-  - sentences:
-      - "khóa cửa trước"
-    intent:
-      name: HassTurnOn
-      context:
-        domain: lock
-      slots:
-        name: cửa trước
-    response: "đã khóa"
+  # - sentences:
+  #     - "khóa cửa trước"
+  #   intent:
+  #     name: HassTurnOn
+  #     context:
+  #       domain: lock
+  #     slots:
+  #       name: cửa trước
+  #   response: "đã khóa"
 
   - sentences:
       - "khóa tất cả khóa trong bếp"

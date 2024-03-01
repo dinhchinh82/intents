@@ -22,6 +22,17 @@ tests:
     response: "có, rèm cửa bên trái"
 
   - sentences:
+      - "liệu rèm nào đang mở trong phòng khách không"
+    intent:
+      name: HassGetState
+      slots:
+        domain: cover
+        area: "phòng khách"
+        device_class: curtain
+        state: "open"
+    response: "có, rèm cửa bên trái"
+
+  - sentences:
       - "tất cả các rèm trong phòng khách đều đã mở chưa"
     intent:
       name: HassGetState

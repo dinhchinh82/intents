@@ -13,10 +13,10 @@ intents:
           domain: "light"
       - sentences:
           - "bật [tất cả] đèn [trong] <area> [lên]"
-          - "bật [tất cả] <area> đèn"
-          - "[bật] [tất cả] đèn <area> lên"
+          - "đèn <area> bật"
+          - "[bật] [tất cả] đèn <area> [lên]"
           - "kích hoạt [tất cả] đèn [trong] <area>"
-          - "kích hoạt [tất cả] <area> đèn"
+          - "kích hoạt [tất cả] đèn <area>"
         slots:
           domain: "light"
         response: "lights_area"

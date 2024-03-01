@@ -26,7 +26,17 @@ tests:
 
   - sentences:
       - "nhiệt độ của máy điều hòa văn phòng là bao nhiêu"
-      - "máy điều hòa văn phòng đang hiển thị bao nhiêu độ?"
+      - "nhiệt độ trong máy điều hòa văn phòng là bao nhiêu"
+      - "nhiệt độ của máy điều hòa văn phòng là bao nhiêu lúc này"
+      - "nhiệt độ hiện tại của máy điều hòa văn phòng là bao nhiêu"
+      - "nhiệt độ bây giờ của máy điều hòa văn phòng là bao nhiêu"
+      - "nhiệt độ lúc này của máy điều hòa văn phòng là bao nhiêu"
+      - "máy điều hòa văn phòng đang hiển thị bao nhiêu độ"
+      - "máy điều hòa văn phòng có nhiệt độ là bao nhiêu"
+      - "hiện tại máy điều hòa văn phòng có nhiệt độ là bao nhiêu"
+      - "lúc này máy điều hòa văn phòng có nhiệt độ là bao nhiêu"
+      - "máy điều hòa văn phòng lúc này đang là bao nhiêu độ"
+      - "bây giờ máy điều hòa văn phòng hiển thị nhiệt độ là bao nhiêu"
     intent:
       name: HassClimateGetTemperature
       slots:
