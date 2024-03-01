@@ -175,7 +175,7 @@ intents:
           device_class: connectivity
 
       - sentences:
-          - "có thiết bị nào [đang] {bs_connectivity_states:state} [trong <area>] [không]"
+          - "[có] thiết bị nào [đang] {bs_connectivity_states:state} [trong <area>] [không]"
         response: any
         slots:
           domain: binary_sensor
@@ -196,7 +196,7 @@ intents:
           device_class: connectivity
 
       - sentences:
-          - "có bao nhiêu thiết bị (is|are) {bs_connectivity_states:state} [trong <area>]"
+          - "có bao nhiêu thiết bị đang {bs_connectivity_states:state} [trong <area>]"
         response: how_many
         slots:
           domain: binary_sensor
@@ -204,7 +204,7 @@ intents:
 
       # Cửa
       - sentences:
-          - "(is|are) <name> {bs_door_states:state} [trong <area>]"
+          - "<name> có {bs_door_states:state} [trong <area>] không"
         response: one_yesno
         requires_context:
           domain: binary_sensor
@@ -215,7 +215,7 @@ intents:
 
       # Cửa garage
       - sentences:
-          - "(is|are) <name> {bs_garage_door_states:state} [trong <area>]"
+          - "<name> có [được] {bs_garage_door_states:state} [trong <area>]"
         response: one_yesno
         requires_context:
           domain: binary_sensor

@@ -336,7 +336,7 @@ lists:
 expansion_rules:
   name: "[cái] {name}"
   area: "[cái] {area}"
-  what_is: "(là cái gì|là gì|bao nhiêu |là bao nhiêu|bằng bao nhiêu)"
+  what_is: "(là cái gì|là gì|bao nhiêu|là bao nhiêu|bằng bao nhiêu)"
   where_is: "(ở đâu|nằm ở đâu)"
   brightness: "{brightness}[[ ]%| phần trăm]"
   light: "[cái] (đèn|ánh sáng)"

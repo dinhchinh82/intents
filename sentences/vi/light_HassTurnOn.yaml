@@ -5,9 +5,10 @@ intents:
       - sentences:
           - "bật (<area> <name> <light_devices>|<name> <light_devices> [trong <area>])"
           - "[bật] (<area> <name> <light_devices>|<name> <light_devices> [trong <area>]) đến trạng thái bật"
-          - "kích hoạt (<area> <name> <light_devices>|<name> <light_devices> [trong <area>])"
+          # - "kích hoạt (<area> <name> <light_devices>|<name> <light_devices> [trong <area>])"
+          - "kích hoạt (<light_devices> <area>)"
         expansion_rules:
-          light_devices: "(đèn[s]|[công tắc] đèn)"
+          light_devices: "(đèn|công tắc)"
         requires_context:
           domain: "light"
       - sentences:
@@ -27,7 +28,7 @@ intents:
           - "bật [tất cả] đèn lên"
         response: "lights_area"
         expansion_rules:
-          in_here: "[ trong] đây"
+          in_here: "[ở] đây"
         slots:
           domain: "light"
         requires_context:

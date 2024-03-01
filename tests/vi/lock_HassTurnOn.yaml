@@ -11,11 +11,9 @@ tests:
     response: "đã khóa"
 
   - sentences:
-      - "khóa tất cả khóa trong nhà bếp"
-      - "khóa cửa trong nhà bếp"
-      - "khóa cửa nhà bếp"
-      - "khóa cửa nhà bếp"
-      - "khóa cửa trong nhà bếp"
+      - "khóa tất cả khóa trong bếp"
+      - "khóa cửa bếp"
+      - "khóa cửa trong bếp"
     intent:
       name: HassTurnOn
       slots:

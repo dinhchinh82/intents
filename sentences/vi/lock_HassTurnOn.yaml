@@ -9,8 +9,8 @@ intents:
         response: lock
 
       - sentences:
-          - "khoá [tất cả] [các] [(ổ khoá|cửa)[s]] [trong] <area>"
-          - "khoá [tất cả] <area> [(ổ khoá|cửa)[s]]"
+          - "khoá [tất cả] [các] khóa [trong] <area>"
+          - "khoá [tất cả] <area> [(ổ khoá|cửa|khóa)]"
         slots:
           domain: "lock"
           name: "all"

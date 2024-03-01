@@ -243,17 +243,17 @@ tests:
     response: "có"
 
   - sentences:
-      - "thiết bị nào đang kết nối?"
+      - "thiết bị nào đang kết nối"
     intent:
       name: HassGetState
       slots:
         domain: binary_sensor
         device_class: connectivity
         state: "on"
-    response: "Phone"
+    response: "có, điện thoại"
 
   - sentences:
-      - "có bao nhiêu thiết bị đang kết nối?"
+      - "có bao nhiêu thiết bị đang kết nối"
     intent:
       name: HassGetState
       slots:
@@ -270,19 +270,19 @@ tests:
       slots:
         domain: "binary_sensor"
         device_class: "door"
-        name: "Pet Door"
+        name: "cửa cho thú cưng"
         state: "on"
     response: "không, đóng"
 
   # Cửa garage
   - sentences:
-      - "cửa garage phụ có được đóng không"
+      - "cửa gara phụ có được đóng không"
     intent:
       name: HassGetState
       slots:
         domain: "binary_sensor"
         device_class: "garage_door"
-        name: "Secondary Garage Door"
+        name: "cửa gara phụ"
         state: "off"
     response: "có"
 
