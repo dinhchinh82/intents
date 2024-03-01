@@ -37,8 +37,10 @@ responses:
           có
         {% else %}
           {% set no_match = query.unmatched | map(attribute="name") | sort | list %}
+
           {% if no_match | length > 4 %}
-            không, {{ no_match[:3] | join(", ") }} và {{ (no_match | length - 3) }} nữa không phải là {{ slots.state }}
+            không, {{ no_match[:3] | join(", ") }} và {{ (no_match | length - 3) }} cái khác đều không  {{ slots.state }}
+          
           {%- else -%}
             không,
             {% for name in no_match -%}
@@ -54,7 +56,7 @@ responses:
         {% else: %}
           {% set match = query.matched | map(attribute="name") | sort | list %}
             {% if match | length > 4 %}
-              {{ match[:3] | join(", ") }} và {{ (match | length - 3) }}
+              {{ match[:3] | join(", ") }} và {{ (match | length - 3) }} cái nữa
             {% else %}
               {%- for name in match -%}
                 {% if not loop.first and not loop.last %}, {% elif loop.last and not loop.first %} và {% endif -%}

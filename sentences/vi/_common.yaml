@@ -82,7 +82,7 @@ lists:
         out: light
       - in: quạt
         out: fan
-      - in: công tắc
+      - in: "công tắc"
         out: switch
   cover_states:
     values:

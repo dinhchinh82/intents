@@ -21,19 +21,25 @@ entities:
   - name: "đèn phòng ngủ"
     id: "light.bedroom_lamp"
     area: "bedroom"
-    state: "off"
+    state:
+      in: "đang tắt"
+      out: "off"
 
   - name: "Công tắc phòng ngủ"
     id: "switch.bedroom"
     area: "bedroom"
-    state: "off"
+    state:
+      in: "tắt"
+      out: "off"
 
   - name: "Công tắc nhà bếp"
     id: "switch.kitchen"
     area: "kitchen"
-    state: "on"
+    state:
+      in: "bật"
+      out: "on"
 
-  - name: "Mat bếp"
+  - name: "quầy bếp"
     id: "light.kitchen_countertop"
     area: "kitchen"
     state: "on"

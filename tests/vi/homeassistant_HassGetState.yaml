@@ -16,7 +16,7 @@ tests:
       slots:
         name: "đèn phòng ngủ"
         state: "on"
-    response: "không, tắt"
+    response: "không, đang tắt"
 
   - sentences:
       - "có công tắc nào trong bếp đang bật không"
@@ -26,7 +26,7 @@ tests:
         area: "bếp"
         domain: "switch"
         state: "on"
-    response: "có, Công tắc bếp"
+    response: "có, Công tắc nhà bếp"
 
   - sentences:
       - "tất cả công tắc có đang bật không"
@@ -44,7 +44,8 @@ tests:
       slots:
         domain: "light"
         state: "off"
-    response: "không, Đèn Garage, Tủ bếp, Trần bếp và 3 cái khác chưa tắt"
+    # response: "không, Đèn Garage, Tủ bếp, Trần bếp và 3 cái khác chưa tắt"
+    response: "không, quầy bếp, Trần nhà bếp, Tủ bếp và 3 cái khác đều không tắt"
 
   - sentences:
       - "đèn nào đang bật?"
@@ -53,10 +54,10 @@ tests:
       slots:
         domain: "light"
         state: "on"
-    response: "Đèn Garage, Tủ bếp, Trần bếp và 3 cái khác"
+    response: "quầy bếp, Trần nhà bếp, Tủ bếp và 3 cái nữa"
 
   - sentences:
-      - "có bao nhiêu bóng đèn đang bật?"
+      - "có bao nhiêu đèn đang bật?"
     intent:
       name: HassGetState
       slots:
@@ -67,7 +68,6 @@ tests:
   - sentences:
       - "tất cả đèn trong bếp đã bật chưa"
       - "tất cả đèn đã bật trong bếp chưa"
-      - "tất cả đèn trong bếp đã bật chưa"
     intent:
       name: HassGetState
       slots:
