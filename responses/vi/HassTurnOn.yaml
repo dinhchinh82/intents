@@ -2,7 +2,9 @@ language: vi
 responses:
   intents:
     HassTurnOn:
-      default: "đã bật {{ state.domain }}"
+      # default : đã thực hiện
+      # default: "đã bật {{ state.domain }}"
+      default: đã bật {{slots.name}}
       lights_area: "đã bật đèn"
       fans_area: "đã bật quạt"
       cover: "đã mở"
