@@ -8,7 +8,7 @@ tests:
         domain: cover
         name: "rèm cửa bên trái"
         state: "closed"
-    response: "không, đang mở"
+    response: "không, mở"
 
   - sentences:
       - "có rèm nào đang được mở trong phòng khách không"
@@ -30,7 +30,7 @@ tests:
         area: "phòng khách"
         device_class: curtain
         state: "open"
-    response: "không, Bình phong Phải chưa mở"
+    response: "không, rèm cửa bên phải không mở"
 
   - sentences:
       - "những rèm nào đang đóng?"
@@ -40,7 +40,7 @@ tests:
         domain: cover
         device_class: curtain
         state: "closed"
-    response: "rèm phòng ngủ và Bình phong Phải"
+    response: "rèm cửa bên phải và rèm cửa phòng ngủ"
 
   - sentences:
       - "có bao nhiêu rèm đang đóng?"

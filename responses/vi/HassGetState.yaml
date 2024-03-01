@@ -57,7 +57,7 @@ responses:
               {{ match[:3] | join(", ") }} và {{ (match | length - 3) }}
             {% else %}
               {%- for name in match -%}
-                {% if not loop.first and not loop.last %}, {% elif loop.last and not loop.first %} and {% endif -%}
+                {% if not loop.first and not loop.last %}, {% elif loop.last and not loop.first %} và {% endif -%}
                 {{ name }}
               {%- endfor -%}
             {% endif %}

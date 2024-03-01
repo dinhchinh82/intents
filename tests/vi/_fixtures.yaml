@@ -63,7 +63,7 @@ entities:
     attributes:
       device_class: curtain
 
-  - name: "Rèm cửa bên phải"
+  - name: "rèm cửa bên phải"
     id: "cover.curtain_right"
     area: "living_room"
     state: "closed"
