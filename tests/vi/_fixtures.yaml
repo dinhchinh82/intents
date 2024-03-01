@@ -197,16 +197,16 @@ entities:
     attributes:
       device_class: garage_door
 
-  - name: "Khí gas"
+  - name: "khí gas"
     id: "binary_sensor.gas"
     area: "kitchen"
     state:
-      in: "rõ ràng"
+      in: "trong lành"
       out: "off"
     attributes:
       device_class: gas
 
-  - name: "Máy tính"
+  - name: "máy tính"
     id: "binary_sensor.computer_heat"
     state:
       in: "nóng"
@@ -214,7 +214,7 @@ entities:
     attributes:
       device_class: heat
 
-  - name: "Đèn"
+  - name: "đèn"
     id: "binary_sensor.light"
     state:
       in: "không có ánh sáng"
@@ -229,6 +229,7 @@ entities:
       out: "on"
     attributes:
       device_class: lock
+
   - name: "cảm biến rò rỉ nhà bếp"
     id: "binary_sensor.water_sensor"
     area: "kitchen"
@@ -256,7 +257,7 @@ entities:
     attributes:
       device_class: occupancy
 
-  - name: "cửa cứu trợ"
+  - name: "cửa nhà kho"
     id: "binary_sensor.shed_door_opening"
     state:
       in: "đóng"
@@ -355,7 +356,7 @@ entities:
     attributes:
       device_class: vibration
 
-  - name: "cửa sổ"
+  - name: "cửa nhà xe"
     id: "binary_sensor.shed_window"
     state:
       in: "mở"

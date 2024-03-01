@@ -177,7 +177,7 @@ lists:
 
   bs_gas_states:
     values:
-      - in: "(đã phát hiện|đang kích hoạt|bật)"
+      - in: "(đã phát hiện|đang kích hoạt|bật|được phát hiện|đang hoạt động)"
         out: "on"
       - in: "bình thường"
         out: "off"
@@ -191,14 +191,14 @@ lists:
 
   bs_light_states:
     values:
-      - in: "đã phát hiện"
+      - in: "có phát hiện"
         out: "on"
       - in: "không có ánh sáng"
         out: "off"
 
   bs_lock_states:
     values:
-      - in: "không khoá"
+      - in: "mở khoá"
         out: "on"
       - in: "đã khoá"
         out: "off"
@@ -352,7 +352,8 @@ expansion_rules:
   in: "(trong|ở|tại|của)"
   position: "{position}[[ ]%| phần trăm]"
   volume: "{volume:volume_level}[[ ]%| phần trăm]"
-  which: nào
+  which: "nào"
+  what: "cái nào"
 
   # Questions
   what_is_the_class_of_name: "(<name> [trong <area>] [là|bằng] <what_is> |<name> [là|bằng] <what_is> [ở|trong|tại|của<area>])"
