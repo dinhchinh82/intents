@@ -7,7 +7,7 @@ responses:
       # số lượng tên trả về bị giới hạn là 4, nếu có nhiều hơn, ba tên đầu tiên và số lượng còn lại sẽ được trả về
       # với 4 tên trở xuống, các tên được nối lại bằng dấu phẩy ", " và tên cuối cùng được nối bằng " và "
       one: |
-        {{ slots.name | capitalize }} đang ở mức {{ state.state_with_unit }}
+        {{ slots.name | capitalize }} là {{ state.state_with_unit }}
 
       one_yesno: |
         {% if query.matched %}

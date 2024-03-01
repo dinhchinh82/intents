@@ -7,7 +7,7 @@ tests:
       name: HassGetState
       slots:
         name: "nhiệt độ bên ngoài"
-    response: "nhiệt độ bên ngoài là 42 °F"
+    response: "Nhiệt độ bên ngoài là 42 °F"
 
   - sentences:
       - "đèn phòng ngủ có được bật không"
