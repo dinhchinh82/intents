@@ -82,23 +82,23 @@ intents:
 
       # Màu sắc
       - sentences:
-          - "[<set>] <name> [màu|màu sắc] [đến] {color}"
+          - "[<set>] <name> [màu|màu sắc] [lên|đến|sang] {color}"
           - "[<set>] [màu sắc|màu] [của] <name> [sang|lên|đến] {color}"
         requires_context:
           domain: light
         response: color
-      - sentences:
-          - "[<set>] [màu của] (<area> | [tất cả [các]] đèn trong <area> | [tất cả] đèn <area>) [đến] {color}"
-          - "[<set>] (<area> | [tất cả] đèn trong <area> | [tất cả] đèn <area>) [màu] [đến] {color}"
-        slots:
-          name: "tất cả"
-        response: brightness
+      # - sentences:
+      #     - "[<set>] [màu của|màu sắc] (<area> | [tất cả [các]] đèn trong <area> | [tất cả] đèn <area>) [lên|sang|đến] {color}"
+      #     - "[<set>] (<area> | [tất cả] đèn trong <area> | [tất cả] đèn <area>) [màu] [đến] {color}"
+      #   slots:
+      #     name: "tất cả"
+      #   response: brightness
 
       - sentences:
-          - "[<set>] [màu của|màu] [tất cả] <light> [đến|sang] {color}"
-          - "[<set>] [màu của|màu] [tất cả] <light> ([<in_here>] [sang|lên|đến] {color})"
+          - "[<set>] [màu của|màu sắc|màu] [tất cả] <light> ([<in_here>] [đến|sang] {color})"
+          - "[<set>] [màu của|màu sắc|màu] {color} cho [tất cả] <light> [<in_here>]"
         expansion_rules:
-          in_here: "[ ở] đây"
+          in_here: "[ở] đây"
         response: color
         requires_context:
           area:

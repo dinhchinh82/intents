@@ -347,7 +347,7 @@ expansion_rules:
   open: "(mở|nâng lên)"
   đóng: "(đóng|đậy lại|hạ xuống)"
   close: "(đóng|đậy lại|hạ xuống)"
-  set: "(đặt|tạo|thay đổi|bật)"
+  set: "(đặt|tạo|thay đổi|bật|thiết lập)"
   numeric_value_set: "(đặt|thay đổi|bật|tăng|giảm|tạo|cài)"
   in: "(trong|ở|tại|của)"
   position: "{position}[[ ]%| phần trăm]"

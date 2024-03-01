@@ -111,43 +111,38 @@ tests:
 
   # màu sắc
   - sentences:
-      - "đặt màu sắc đèn phòng ngủ lên đỏ"
-      - "thay đổi màu sắc của đèn phòng ngủ lên đỏ"
-      - "đặt màu đèn phòng ngủ lên đỏ"
-      - "thay đổi màu sắc của đèn phòng ngủ lên đỏ"
+      - "thay đổi màu sắc của đèn phòng ngủ sang đỏ"
+      - "đặt màu đèn phòng ngủ sang đỏ"
       - "thiết lập màu sắc của đèn phòng ngủ lên đỏ"
       - "đèn phòng ngủ màu đỏ"
-      - "quay đèn phòng ngủ lên đỏ"
     intent:
       name: HassLightSet
       slots:
-        color: đỏ
+        color: red
         name: đèn phòng ngủ
     response: "đã thiết lập màu sắc"
 
-  - sentences:
-      - "đặt màu sắc phòng ngủ lên đỏ"
-      - "thay đổi màu sắc của phòng ngủ lên đỏ"
-      - "phòng ngủ màu đỏ"
-      - "phòng ngủ màu đỏ"
-      - "đặt màu sắc của tất cả đèn trong phòng ngủ lên đỏ"
-    intent:
-      name: HassLightSet
-      slots:
-        color: đỏ
-        area: phòng ngủ
-        name: tất cả
-    response: "đã thiết lập màu sắc"
+  # - sentences:
+  #     # - "đặt màu sắc phòng ngủ sang đỏ"
+  #     - "thay đổi màu sắc của phòng ngủ sang đỏ"
+  #     - "phòng ngủ màu đỏ"
+  #     - "đặt màu sắc của tất cả đèn trong phòng ngủ sang đỏ"
+  #   intent:
+  #     name: HassLightSet
+  #     slots:
+  #       color: red
+  #       area: phòng ngủ
+  #       name: tất cả
+  #   response: "đã thiết lập màu sắc"
 
   - sentences:
-      - "tạo màu đỏ cho đèn"
-      - "đặt màu sắc của tất cả đèn ở đây lên đỏ"
-      - "tạo màu đỏ cho tất cả đèn ở đây"
+      - "đặt màu sắc tất cả đèn ở đây sang đỏ"
+      - "đặt màu đỏ cho tất cả đèn ở đây"
     intent:
       name: HassLightSet
       context:
         area: phòng ngủ
       slots:
-        color: đỏ
+        color: red
         area: phòng ngủ
     response: "đã thiết lập màu sắc"
