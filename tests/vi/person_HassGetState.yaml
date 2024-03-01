@@ -25,8 +25,8 @@ tests:
       slots:
         domain: person
         name: Ada
-        state: nhà
-    response: "Không,đi làm"
+        state: "ở nhà "
+    response: "không, đi làm"
 
   - sentences:
       - "có ai ở nhà không"
@@ -34,8 +34,8 @@ tests:
       name: HassGetState
       slots:
         domain: person
-        state: home
-    response: "Có, Joseph đang ở nhà"
+        state: "ở nhà "
+    response: "có, Joseph"
 
   - sentences:
       - "mọi người có ở nhà không"
@@ -43,23 +43,23 @@ tests:
       name: HassGetState
       slots:
         domain: person
-        state: home
-    response: "Không, Ada và John không ở nhà"
+        state: "ở nhà "
+    response: "không, Ada và John không ở nhà"
 
   - sentences:
-      - "ai đang ở nhà"
+      - "ai đang ở nhà vậy"
     intent:
       name: HassGetState
       slots:
         domain: person
-        state: home
+        state: "ở nhà "
     response: "Joseph"
 
   - sentences:
-      - "có bao nhiêu người ở nhà"
+      - "có bao nhiêu người ở nhà vậy"
     intent:
       name: HassGetState
       slots:
         domain: person
-        state: home
+        state: "ở nhà "
     response: "1"

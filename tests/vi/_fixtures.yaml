@@ -56,7 +56,10 @@ entities:
   - name: "rèm cửa bên trái"
     id: "cover.curtain_left"
     area: "living_room"
-    state: "open"
+    state:
+      in: "mở"
+      out: "open"
+
     attributes:
       device_class: curtain
 
@@ -695,7 +698,7 @@ entities:
 
   - name: "Joseph"
     id: "person.jospeh"
-    state: "ở nhà"
+    state: "ở nhà "
 
   - name: "Ada"
     id: "person.ada"

@@ -8,7 +8,7 @@ tests:
         domain: lock
         name: "cửa trước"
         state: "locked"
-    response: "Có"
+    response: "có"
 
   - sentences:
       - "có cửa nào chưa khóa không"
@@ -17,7 +17,7 @@ tests:
       slots:
         domain: lock
         state: "unlocked"
-    response: "Có, cửa sau"
+    response: "có, cửa sau"
 
   - sentences:
       - "có cửa chưa khóa nào không"
@@ -26,7 +26,7 @@ tests:
       slots:
         domain: lock
         state: "unlocked"
-    response: "Có, cửa sau"
+    response: "có, cửa sau"
 
   - sentences:
       - "tất cả cửa khóa chưa"
@@ -35,7 +35,7 @@ tests:
       slots:
         domain: lock
         state: "locked"
-    response: "Không, cửa sau khóa"
+    response: "không, cửa sau không khóa"
 
   # - sentences:
   #     - "những cửa nào được khóa"

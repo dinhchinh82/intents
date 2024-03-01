@@ -11,46 +11,46 @@ responses:
 
       one_yesno: |
         {% if query.matched %}
-          Có
+          có
         {% else %}
-          Không, {{ state.state_with_unit }}
+          không, {{ state.state_with_unit }}
         {% endif %}
 
       any: |
         {% if query.matched %}
           {% set match = query.matched | map(attribute="name") | sort | list %}
           {% if match | length > 4 %}
-            Có, {{ match[:3] | join(", ") }} và thêm {{ (match | length - 3) }} nữa
+            có, {{ match[:3] | join(", ") }} và thêm {{ (match | length - 3) }} nữa
           {%- else -%}
-            Có,
+            có,
             {% for name in match -%}
-              {% if not loop.first and not loop.last %}, {% elif loop.last and not loop.first %} and {% endif -%}
+              {% if not loop.first and not loop.last %}, {% elif loop.last and not loop.first %} và {% endif -%}
               {{ name }}
-            {%- endfor -%}
+            {%- endfor -%} 
           {% endif %}
         {% else %}
-          Không
+          không
         {% endif %}
 
       all: |
         {% if not query.unmatched: %}
-          Có
+          có
         {% else %}
           {% set no_match = query.unmatched | map(attribute="name") | sort | list %}
           {% if no_match | length > 4 %}
-            Không, {{ no_match[:3] | join(", ") }} và {{ (no_match | length - 3) }} nữa không phải là {{ slots.state }}
+            không, {{ no_match[:3] | join(", ") }} và {{ (no_match | length - 3) }} nữa không phải là {{ slots.state }}
           {%- else -%}
-            Không,
+            không,
             {% for name in no_match -%}
-              {% if not loop.first and not loop.last %}, {% elif loop.last and not loop.first %} and {% endif -%}
+              {% if not loop.first and not loop.last %}, {% elif loop.last and not loop.first %} và {% endif -%}
               {{ name }}
-            {%- endfor %} {{ slots.state }}
+            {%- endfor %} không {{ slots.state }}
           {% endif %}
         {% endif %}
 
       which: |
         {% if not query.matched %}
-          Không có
+          không có
         {% else: %}
           {% set match = query.matched | map(attribute="name") | sort | list %}
             {% if match | length > 4 %}

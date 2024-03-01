@@ -16,7 +16,7 @@ tests:
       slots:
         name: "đèn phòng ngủ"
         state: "on"
-    response: "Không, tắt"
+    response: "không, tắt"
 
   - sentences:
       - "có công tắc nào trong bếp đang bật không"
@@ -26,7 +26,7 @@ tests:
         area: "bếp"
         domain: "switch"
         state: "on"
-    response: "Có, Công tắc bếp"
+    response: "có, Công tắc bếp"
 
   - sentences:
       - "tất cả công tắc có đang bật không"
@@ -35,7 +35,7 @@ tests:
       slots:
         domain: "switch"
         state: "on"
-    response: "Không, Công tắc phòng ngủ không bật"
+    response: "không, Công tắc phòng ngủ không bật"
 
   - sentences:
       - "tất cả đèn đã tắt chưa"
@@ -44,7 +44,7 @@ tests:
       slots:
         domain: "light"
         state: "off"
-    response: "Không, Đèn Garage, Tủ bếp, Trần bếp và 3 cái khác chưa tắt"
+    response: "không, Đèn Garage, Tủ bếp, Trần bếp và 3 cái khác chưa tắt"
 
   - sentences:
       - "đèn nào đang bật?"
@@ -74,4 +74,4 @@ tests:
         domain: "light"
         state: "on"
         area: "bếp"
-    response: "Có"
+    response: "có"
