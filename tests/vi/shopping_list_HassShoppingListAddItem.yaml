@@ -7,4 +7,4 @@ tests:
       name: HassShoppingListAddItem
       slots:
         item: "táo "
-    response: Đã thêm táo
+    response: "đã thêm táo"

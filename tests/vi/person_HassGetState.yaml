@@ -16,7 +16,7 @@ tests:
       slots:
         domain: person
         name: Ada
-    response: "Ada đang ở Công ty"
+    response: "Ada đang đi làm"
 
   - sentences:
       - "Ada có ở nhà không"
@@ -25,8 +25,8 @@ tests:
       slots:
         domain: person
         name: Ada
-        state: home
-    response: "Không, đang ở Công ty"
+        state: nhà
+    response: "Không,đi làm"
 
   - sentences:
       - "có ai ở nhà không"
