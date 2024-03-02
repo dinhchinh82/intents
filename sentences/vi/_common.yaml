@@ -355,9 +355,17 @@ expansion_rules:
   which: "nào"
   what: "cái nào"
 
+  # for specific command <by hung>
+  khóa: "khóa|đóng"
+
+  # for adverb <by hung>
+  trong: "ở|trong|tại|của"
+  trong_area: " [<trong>] {area}"
+
   # Questions
   what_is_the_class_of_name: "(<name> [trong <area>] [là|bằng] <what_is> |<name> [là|bằng] <what_is> [ở|trong|tại|của<area>])"
 skip_words:
+  - "[ [hãy] [cho] tôi biết | bạn có biết]"
   - "làm ơn"
   - "có thể"
   - "bạn có thể"
@@ -365,3 +373,5 @@ skip_words:
   - "hãy"
   - "vui lòng"
   - "xin hãy"
+  - "đi"
+  - "(giúp|cho) tôi"
