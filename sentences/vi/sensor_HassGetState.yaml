@@ -73,7 +73,7 @@ intents:
       # Battery
       - sentences:
           - "<what_is_the_class_of_name>"
-          - "pin <name> còn bao nhiêu (đã qua sử dụng|còn lại)"
+          - "{name} (còn [lại] |có ) bao nhiêu pin"
         response: one
         requires_context:
           domain: sensor
@@ -152,7 +152,7 @@ intents:
       # Date
       - sentences:
           - "<what_is_the_class_of_name>"
-          - "khi nào (là|sẽ là|đã xảy ra|sẽ xảy ra) <name>"
+          - "{name} [sẽ|sắp] [là] [vào] (bao giờ| ngày nào|lúc nào|thời điểm nào |khi nào) "
         response: one
         requires_context:
           domain: sensor

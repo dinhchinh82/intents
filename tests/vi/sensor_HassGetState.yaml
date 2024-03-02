@@ -60,7 +60,7 @@ tests:
   # Battery
   - sentences:
       - "mức pin của điện thoại của tôi là bao nhiêu"
-      # - "điện thoại của tôi còn bao nhiêu pin"
+      - "điện thoại của tôi còn bao nhiêu pin"
     intent:
       name: HassGetState
       slots:
@@ -127,7 +127,7 @@ tests:
   # Date
   - sentences:
       - "ngày sinh nhật tiếp theo là bao nhiêu"
-      # - "sinh nhật tiếp theo sẽ là khi nào?"
+      - "sinh nhật tiếp theo sẽ là khi nào?"
     intent:
       name: HassGetState
       slots:
