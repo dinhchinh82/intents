@@ -339,7 +339,7 @@ expansion_rules:
   what_is: "(là cái gì|là gì|bao nhiêu|là bao nhiêu|bằng bao nhiêu)"
   where_is: "(ở đâu|nằm ở đâu)"
   brightness: "{brightness}[[ ]%| phần trăm]"
-  light: "[cái] (đèn|ánh sáng)"
+  light: "[cái] (đèn|ánh sáng) "
   turn: "(kích hoạt|bật|chuyển|đổi)"
   temp: "(nhiệt|nhiệt độ)"
   temperature: "{temperature}[ ][°|độ|độ C][ ][{temperature_unit}]"
@@ -355,15 +355,34 @@ expansion_rules:
   which: "nào"
   what: "cái nào"
 
+  #pronoun
+  all: "(tất [cả] |mọi|hết [tất cả] |tất tần tật)"
+
   # for specific command <by hung>
-  khóa: "khóa|đóng"
+  lock: "khóa|đóng"
 
   # for adverb <by hung>
-  trong: "ở|trong|tại|của"
-  trong_area: " [<trong>] {area}"
+  in_area: " [<in>] {area}"
+  every_where: " [<in>] <all> (nơi|chỗ|vị trí)"
+  here: "((chỗ|vị trí) này | đây [này])"
+  in_here: " [<in>] <here>"
+  bao_nhiêu: "(bao nhiêu|khi nào|ở đâu|bao giờ|như thế nào |bao lâu)"
+
+  # verb
+  is: "[là][bằng]"
+  showed_by: "[được] (hiển thị|cho thấy|[được] chỉ ra|đo) (bởi|bằng|[thông ]qua|trên|trong|tại) "
+
+  #noun
+  class_of_name: "<class> [<of>|<showed_by>] [cái] {name}"
+
+  #preposition
+  of: "( của| thuộc [về] |tại| bởi|bằng|trên |từ|trong)"
 
   # Questions
-  what_is_the_class_of_name: "(<name> [trong <area>] [là|bằng] <what_is> |<name> [là|bằng] <what_is> [ở|trong|tại|của<area>])"
+  what_is_the_class_of_name_type_1: "<class_of_name> [là] [bằng] [mất] <bao_nhiêu> [<in_here>] "
+  what_is_the_class_of_name_type_2: "<class_of_name> [<in_here>] [là] [bằng] [mất] <bao_nhiêu>  "
+  what_is_the_class_of_name: "(<what_is_the_class_of_name_type_1>|<what_is_the_class_of_name_type_2>)"
+
 skip_words:
   - "[ [hãy] [cho] tôi biết | bạn có biết]"
   - "làm ơn"

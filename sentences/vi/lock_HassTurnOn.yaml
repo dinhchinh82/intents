@@ -4,17 +4,17 @@ intents:
   HassTurnOn:
     data:
       - sentences:
-          - "<khóa> <name> [ [<trong>] <area>] "
+          - "<lock> <name> [ <in_area>] "
         requires_context:
           domain: lock
         response: lock
 
       - sentences:
-          - "<khóa> [tất cả|mọi] [cánh] <cửa> <trong_area>"
+          - "<lock> [tất cả|mọi] [cánh] <door> <in_area>"
             # - "khoá [tất cả] [các] [trong|tại] <area>"
             # - "khoá [tất cả] <area> [(ổ khoá|cửa|khóa)]"
         expansion_rules:
-          cửa: "khóa|cửa"
+          door: "khóa|cửa"
         slots:
           domain: "lock"
           name: "all"

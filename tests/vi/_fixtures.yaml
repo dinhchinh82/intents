@@ -365,7 +365,7 @@ entities:
       device_class: window
 
   # https://www.home-assistant.io/integrations/sensor/
-  - name: "công suất biểu kiến của thiết bị"
+  - name: "thiết bị gì đó"
     id: "sensor.appliance_apparent_power"
     state: "2"
     attributes:
@@ -420,7 +420,7 @@ entities:
       device_class: data_rate
       unit_of_measurement: "MB/s"
 
-  - name: "Kích thước tệp nhật ký"
+  - name: "tệp nhật ký"
     id: "sensor.log_file_size"
     state: "106"
     attributes:
@@ -433,7 +433,7 @@ entities:
     attributes:
       device_class: date
 
-  - name: "Số km đã đi của xe"
+  - name: "Quãng đường xe đã đi"
     id: "sensor.car_mileage"
     state: "65536"
     attributes:
@@ -503,7 +503,7 @@ entities:
       device_class: moisture
       unit_of_measurement: "%"
 
-  - name: "Giá trị mỗi kí watt"
+  - name: "Giá tiền mỗi kw"
     id: "sensor.price_per_kW"
     state: "1"
     attributes:
@@ -516,6 +516,7 @@ entities:
     attributes:
       device_class: nitrogen_dioxide
       unit_of_measurement: "µg/m³"
+
   - name: "cảm biến NO của máy bơm nhiệt"
     id: "sensor.heat_pump_no"
     state: "50"
@@ -612,7 +613,7 @@ entities:
       device_class: sound_pressure
       unit_of_measurement: "dB"
 
-  - name: "Tốc độ đi lại"
+  - name: "Tốc độ di chuyển"
     id: "sensor.traveling speed"
     state: "67"
     attributes:
@@ -626,21 +627,21 @@ entities:
       device_class: sulphur_dioxide
       unit_of_measurement: "µg/m³"
 
-  - name: "Lò"
+  - name: "Lò sửoi"
     id: "sensor.furnace_temperature"
     state: "380"
     attributes:
       device_class: temperature
       unit_of_measurement: "°C"
 
-  - name: "cảm biến xì hơi"
+  - name: "cảm biến poo poo"
     id: "sensor.voc_sensor"
     state: "35"
     attributes:
       device_class: volatile_organic_compounds
       unit_of_measurement: "µg/m³"
 
-  - name: "cảm biến xì hơi 2"
+  - name: "cảm biến poo poo 2"
     id: "sensor.voc_sensor_parts"
     state: "35"
     attributes:
